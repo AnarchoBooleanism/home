@@ -116,6 +116,11 @@ a:hover {
   justify-content: space-around;
 }
 
+.sectionHeader {
+  font-size: 3.5em;
+  margin: 0;
+}
+
 .About .flex-container {
   min-height: calc(100vh - 5em);
 }
@@ -216,6 +221,10 @@ a:hover {
   .flex-container img {
     max-width: 100%;
     max-height: 100vh;
+  }
+
+  .sectionHeader {
+    text-align: center;
   }
 
   .Contact .flex-container {

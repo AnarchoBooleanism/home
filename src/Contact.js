@@ -10,7 +10,7 @@ const Contact = () => {
             </div>
           </div>
           <div id="contactBox">
-            <h1>Contact</h1>
+            <h1 class="sectionHeader">Contact</h1>
             <h2>Interested? Here you go:</h2>
             <div id="emailBox">
               <a className="linkButton" id="emailButton" href="mailto:naguerr2@uci.edu">Email me!</a>
@@ -18,8 +18,8 @@ const Contact = () => {
             </div>
             <div class="buttonWrapper">
               <a className="linkButton" id="resumeButton" href="">Resume</a>
-              <a className="linkButton" href="https://github.com/AnarchoBooleanism">GitHub</a>
-              <a className="linkButton" href="https://www.linkedin.com/in/nathan-guerrero-89a41919b/">LinkedIn</a>
+              <a className="linkButton" href="https://github.com/AnarchoBooleanism"><i className="fab fa-github"></i> GitHub</a>
+              <a className="linkButton" href="https://www.linkedin.com/in/nathan-guerrero-89a41919b/"><i className="fab fa-linkedin-in"></i> LinkedIn</a>
               <a className="linkButton" href="https://uci.joinhandshake.com/users/33173069">Handshake</a>
             </div>
           </div>
