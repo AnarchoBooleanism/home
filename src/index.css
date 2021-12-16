@@ -9,6 +9,12 @@ html {
 }
 
 body {
+  background: linear-gradient(293deg, rgba(46,0,116,1) 0%, rgba(135,1,78,1) 100%);
+  color: white;
+  margin: 0;
+}
+
+.viewArea {
   max-width: 1150px;
 	margin: 0 auto !important;
 	float: none !important;
@@ -20,7 +26,7 @@ h1 {
 }
 
 a {
-  color: #444444;
+  color: #CCCCCC;
   text-decoration: none;
 }
 
@@ -42,7 +48,7 @@ a:hover {
 }
 
 .Navbar a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -51,6 +57,7 @@ a:hover {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  display: flex;
 }
 
 .Navbar .Links li {
@@ -65,11 +72,11 @@ a:hover {
 }
 
 .Navbar .Links li a:hover {
-  background-color: #DDDDDD;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .Navbar .Links li a:active {
-  background-color: #AAAAAA;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .flex-container {
@@ -97,23 +104,26 @@ a:hover {
 .linkButton {
   padding: 1.5em 1em;
   margin: 0.25em 0em;
-  border-color: black;
+  border-color: white;
   border-width: thin;
   border-style: solid;
-  background-color: white;
-  color: black;
+  background-color: none;
+  color: white;
   text-decoration: none;
   text-align: center;
   display: inline-block;
+  transition: background-color 0.25s, color 0.25s;
 }
 
 .linkButton:hover {
   text-decoration: none;
+  background-color: white;
+  color: black;
 }
 
 .buttonWrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around;  
 }
 
 .sectionHeader {
@@ -129,14 +139,11 @@ a:hover {
   height: 100%
 }
 
-.Works {
-  
-}
-
-#works {
+.outerWorks {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .Contact .flex-container {
@@ -194,6 +201,14 @@ a:hover {
   min-width: 25%;
   padding: 1em 0.75em;
   font-size: 1.25em;
+}
+
+#reactLink:hover #reactIcon {
+  transition: transform 0.5s;
+}
+
+#reactLink:hover #reactIcon {
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 700px) {
