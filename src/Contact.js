@@ -9,7 +9,7 @@ const Contact = () => {
               <img src={ codePic } alt="Programming on my laptop"></img>
             </div>
           </div>
-          <div>
+          <div id="contactBox">
             <h1>Contact</h1>
             <h2>Interested? Here you go:</h2>
             <a className="linkButton" href="mailto:naguerr2@uci.edu">Email me!</a> 
