@@ -19,6 +19,15 @@ h1 {
   font-weight: 900;
 }
 
+a {
+  color: #444444;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .Navbar {
   display: flex;
   align-items: center;
@@ -92,6 +101,10 @@ h1 {
   text-decoration: none;
   text-align: center;
   display: inline-block;
+}
+
+.linkButton:hover {
+  text-decoration: none;
 }
 
 .About .flex-container {
