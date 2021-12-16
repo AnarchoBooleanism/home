@@ -15,7 +15,11 @@ const Example = (props) => {
             </div>
             <div>
                 <a href={ example.links[0].url }>
-                    <img src={ example.image }></img>
+                    <div>
+                        <div class="imageBox">
+                            <img src={ example.image } alt="Project example"></img>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>

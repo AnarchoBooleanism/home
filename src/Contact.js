@@ -5,12 +5,14 @@ const Contact = () => {
       <div className="Contact">
         <div className="flex-container">
           <div>
-            <img src={ codePic } alt="Programming on my laptop"></img>
+            <div class="imageBox">
+              <img src={ codePic } alt="Programming on my laptop"></img>
+            </div>
           </div>
           <div>
             <h1>Contact</h1>
             <h2>Interested? Here you go:</h2>
-            <a href="mailto:naguerr2@uci.edu">Email me!</a> 
+            <a className="linkButton" href="mailto:naguerr2@uci.edu">Email me!</a> 
             <p>naguerr2@uci.edu</p>
             <a className="linkButton" href="">Resume</a>
             <a className="linkButton" href="https://github.com/AnarchoBooleanism">GitHub</a>

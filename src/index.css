@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: "Inter";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1150px;
+	margin: 0 auto !important;
+	float: none !important;
+  padding: 0em 1em;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5em;
+  font-weight: 500;
+}
+
+.Navbar h1 {
+  font-weight: 700;
+}
+
+.Navbar a {
+  color: black;
+  text-decoration: none;
+}
+
+.Navbar .Links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.Navbar .Links li {
+  float: right;
+}
+
+.Navbar .Links li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  transition: 0.25s all ease-in-out;
+}
+
+.Navbar .Links li a:hover {
+  background-color: #DDDDDD;
+}
+
+.Navbar .Links li a:active {
+  background-color: #AAAAAA;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.flex-container img {
+  max-width: 40vw;
+  height: auto;
+  max-height: 80vh;
+  transition: 0.5s all ease-in-out;
+}
+
+.flex-container .imageBox {
+  overflow: hidden;
+}
+
+.flex-container img:hover {
+  transform: scale(1.3);
+}
+
+.linkButton {
+  padding: 1.5em 1em;
+  margin: 0.5em 0.5em;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.About .flex-container {
+  min-height: calc(100vh - 5em);
+}
+
+.About .flex-container img {
+  height: 100%
+}
+
+.Works {
+  
+}
+
+#works {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.Contact .flex-container {
+  min-height: calc(100vh - 5em);
+  width: 100%;
+}
+
+.Footer {
+  text-align: center;
+  height: 4em;
+  line-height: 4em;
+}
+
+.Example h1 {
+  font-weight: 700;
+}
+
+.Example h2 {
+  font-weight: 500;
+}
+
+.Example img {
+  filter: brightness(1);
+  transition: 0.5s all ease-in-out;
+}
+
+.Example img:hover {
+  filter: brightness(1.25);
+}
+
+.Example img:active {
+  filter: brightness(0.1);
+  transition: 0.1s filter ease-in-out;
 }

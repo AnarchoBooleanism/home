@@ -10,7 +10,7 @@ const Works = () => {
     return (
       <div className="Works">
         <h1>Works</h1>
-        <h2>Here are some projects I have worked on:</h2>
+        <h3>Here are some projects I have worked on:</h3>
         { examples.map((example) => (
             <Example examples={ example } key={ example.id } />
         )) }
