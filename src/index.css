@@ -132,7 +132,7 @@ h1 {
 }
 
 .Example img {
-  filter: brightness(1);
+  filter: brightness(1) blur(0px);
   transition: 0.5s all ease-in-out;
 }
 
@@ -141,6 +141,6 @@ h1 {
 }
 
 .Example img:active {
-  filter: brightness(0.1);
+  filter: brightness(0.5) blur(16px);
   transition: 0.1s filter ease-in-out;
 }
