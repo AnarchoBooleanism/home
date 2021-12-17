@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: linear-gradient(293deg, rgba(46,0,116,1) 0%, rgba(135,1,78,1) 100%);
+  background: linear-gradient(135deg, rgba(0,71,62,1) 0%, rgba(0,68,2,1) 100%);
   color: white;
   margin: 0;
 }
@@ -69,6 +69,7 @@ a:hover {
   text-align: center;
   padding: 14px 16px;
   transition: 0.25s all ease-in-out;
+  border-radius: 32px;
 }
 
 .Navbar .Links li a:hover {
@@ -88,13 +89,22 @@ a:hover {
 
 .flex-container img {
   max-width: 40vw;
-  height: auto;
+  height: 100%;
   max-height: 80vh;
   transition: 0.5s all ease-in-out;
 }
 
 .flex-container .imageBox {
   overflow: hidden;
+  display: flex;
+  filter: drop-shadow(0 0 0.25em black);
+  border-radius: 10px;
+  transition: 0.5s all ease-in-out;
+  margin: 0;
+}
+
+.flex-container .imageBox:hover {
+  filter: drop-shadow(0 0 0.5em black);
 }
 
 .flex-container img:hover {
@@ -104,20 +114,24 @@ a:hover {
 .linkButton {
   padding: 1.5em 1em;
   margin: 0.25em 0em;
-  border-color: white;
-  border-width: thin;
-  border-style: solid;
-  background-color: none;
+  background-color: rgba(255,255,255,0.2);;
   color: white;
   text-decoration: none;
   text-align: center;
   display: inline-block;
   transition: background-color 0.25s, color 0.25s;
+  border-radius: 128px;
 }
 
 .linkButton:hover {
   text-decoration: none;
   background-color: white;
+  color: black;
+}
+
+.linkButton:active {
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.75);
   color: black;
 }
 
@@ -132,22 +146,42 @@ a:hover {
 }
 
 .About .flex-container {
-  min-height: calc(100vh - 5em);
+  min-height: calc(100vh - 7em);
+  padding: 1em 0em;
 }
 
 .About .flex-container img {
   height: 100%
 }
 
+#works {
+  padding: 0;
+}
+
+
 .outerWorks {
-  min-height: 100vh;
+  min-height: calc(100vh - 2em);
+  padding: 1em 1em;
   display: flex;
   align-items: center;
   background-color: rgba(0,0,0,0.3);
 }
 
+.outerContact {
+  background-image: url("./assets/code_pic1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactBackground {
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
+}
+
 .Contact .flex-container {
-  min-height: calc(100vh - 5em);
+  min-height: calc(100vh - 6em);
+  padding: 1em 0em;
   width: 100%;
 }
 
@@ -155,6 +189,10 @@ a:hover {
   text-align: center;
   height: 4em;
   line-height: 4em;
+}
+
+.Footer h2 {
+  margin: 0;
 }
 
 .Example h1 {
