@@ -250,7 +250,7 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  body {
+  .viewArea {
     max-width: 500px;
   }
 
