@@ -44,7 +44,7 @@ a:hover {
 
 .Navbar h1 {
   font-weight: 700;
-  align: center;
+  text-align: center;
 }
 
 .Navbar a {
@@ -183,6 +183,10 @@ a:hover {
   min-height: calc(100vh - 6em);
   padding: 1em 0em;
   width: 100%;
+}
+
+.outerFooter {
+  background-color: #222222;
 }
 
 .Footer {
