@@ -122,15 +122,22 @@
   }
 
   .contact-info-container {
-    min-width: 100%
+    min-width: 100%;
   }
 
-  .contact-info-container__links {
-    flex-direction: row;
+  .link-button--email, .link-button--resume {
+    min-width: 100%;
   }
 
   .contact-info-container__links__priority-links {
     flex-direction: column;
+    grid-gap: 0em;
+    gap: 0em;
+  }
+
+  .email-copier-container__text {
+    width: 100%;
+    font-size: 1em;
   }
 
   .button-wrapper--contact-info {

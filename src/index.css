@@ -120,4 +120,8 @@ a:hover {
   .section-header {
     text-align: center;
   }
+
+  .section-subheader {
+    text-align: center;
+  }
 }

@@ -14,7 +14,7 @@ const Contact = () => {
               </div>
               <div className="contact-info-container">
                 <h1 className="section-header">Contact</h1>
-                <h2>Interested? Here you go:</h2>
+                <h2 className="section-subheader">Interested? Here you go:</h2>
                 <div className="contact-info-container__links">
                   <div className="contact-info-container__links__priority-links">
                     <a className="link-button link-button--email" href="mailto:naguerr2@uci.edu">Email me!</a>
