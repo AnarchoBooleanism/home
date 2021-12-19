@@ -1,3 +1,5 @@
+import "./style/Navbar.css"
+
 const Navbar = () => {
     return (
       <div className="outerNavbar" id="about">

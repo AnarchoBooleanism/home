@@ -1,4 +1,5 @@
 import codePic from './assets/code_pic1.jpg';
+import './style/Contact.css'
 
 const Contact = () => {
     return (

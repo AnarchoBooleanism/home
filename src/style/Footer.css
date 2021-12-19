@@ -1,0 +1,28 @@
+.outerFooter {
+  background-color: #222222;
+}
+
+.Footer {
+  text-align: center;
+  height: 4em;
+  line-height: 4em;
+}
+
+.Footer h2 {
+  margin: 0;
+}
+
+#reactLink:hover #reactIcon {
+  transition: transform 0.5s;
+}
+
+#reactLink:hover #reactIcon {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 700px) {
+  .Footer {
+    height: auto;
+    line-height: 2em;
+  }
+}

@@ -1,0 +1,23 @@
+.Example h1 {
+  font-weight: 700;
+}
+
+.Example h2 {
+  font-weight: 500;
+}
+
+.Example img {
+  filter: brightness(1) blur(0px);
+  transition: 0.5s all ease-in-out;
+  min-width: 50%;
+  height: auto;
+}
+
+.Example img:hover {
+  filter: brightness(1.25);
+}
+
+.Example img:active {
+  filter: brightness(0.5) blur(16px);
+  transition: 0.1s filter ease-in-out;
+}

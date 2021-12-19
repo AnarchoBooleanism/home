@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Example from "./Example";
 import examplePic1 from "./assets/example_pic1.png";
+import './style/Works.css'
 
 const Works = () => {
     const [examples, setExamples] = useState([

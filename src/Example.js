@@ -1,3 +1,5 @@
+import './style/Example.css'
+
 const Example = (props) => {
     const example = props.examples;
 

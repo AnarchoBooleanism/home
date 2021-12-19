@@ -1,4 +1,5 @@
 import facePic from './assets/face_pic1.jpg';
+import './style/About.css';
 
 const About = () => {
     return (

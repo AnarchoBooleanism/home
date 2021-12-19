@@ -1,0 +1,14 @@
+.About .flex-container {
+    min-height: calc(100vh - 7em);
+    padding: 1em 0em;
+}
+
+.About .flex-container img {
+  height: 100%
+}
+
+@media screen and (max-width: 700px) {
+  .About .flex-container {
+    flex-direction: column-reverse;
+  }
+}

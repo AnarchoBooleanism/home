@@ -1,0 +1,11 @@
+#works {
+  padding: 0;
+}
+
+.outerWorks {
+  min-height: calc(100vh - 2em);
+  padding: 1em 1em;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0,0,0,0.3);
+}

@@ -34,52 +34,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.Navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 5em;
-  font-weight: 500;
-}
-
-.Navbar h1 {
-  font-weight: 700;
-  text-align: center;
-}
-
-.Navbar a {
-  color: white;
-  text-decoration: none;
-}
-
-.Navbar .Links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-}
-
-.Navbar .Links li {
-  float: right;
-}
-
-.Navbar .Links li a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  transition: 0.25s all ease-in-out;
-  border-radius: 32px;
-}
-
-.Navbar .Links li a:hover {
-  background-color: rgba(0,0,0,0.3);
-}
-
-.Navbar .Links li a:active {
-  background-color: rgba(0,0,0,0.5);
-}
-
 .flex-container {
   display: flex;
   align-items: center;
@@ -145,191 +99,8 @@ a:hover {
   margin: 0;
 }
 
-.About .flex-container {
-  min-height: calc(100vh - 7em);
-  padding: 1em 0em;
-}
-
-.About .flex-container img {
-  height: 100%
-}
-
-#works {
-  padding: 0;
-}
-
-
-.outerWorks {
-  min-height: calc(100vh - 2em);
-  padding: 1em 1em;
-  display: flex;
-  align-items: center;
-  background-color: rgba(0,0,0,0.3);
-}
-
 .outerContact {
   background-image: url("./assets/code_pic1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.contactBackground {
-  background-color: rgba(0,0,0,0.5);
-  backdrop-filter: blur(4px);
-}
-
-.Contact .flex-container {
-  min-height: calc(100vh - 6em);
-  padding: 1em 0em;
-  width: 100%;
-}
-
-#emailCopier {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-size: 1em;
-  border-radius: 64px;
-  background-color: rgba(255,255,255,0.2);
-  color: white;
-  transition: background-color 0.25s;
-}
-
-#emailCopier:hover {
-  background-color: white;
-}
-
-#emailCopier:hover #emailCopyBox {
-  color: black;
-}
-
-#emailCopier:hover #emailCopyButton i {
-  color: black;
-}
-
-#emailCopier:active #emailCopyBox {
-  color: black;
-}
-
-#emailCopier:active #emailCopyButton i {
-  color: black;
-}
-
-#emailCopier:active {
-  background-color: rgba(255,255,255,0.6);
-}
-
-#emailCopyBox {
-  line-height: 5.5em;
-  color: white;
-  box-shadow: none;
-  border-width: 0px;
-  padding: 0em 1em;
-  width: 10em;
-  background-color: transparent;
-  border-radius: 64px;
-  transition: background-color 0.25s, color 0.25s;
-}
-
-#emailCopyBox:hover {
-  outline:none!important;
-  background-color: white;
-  color: black;
-}
-
-#emailCopyBox:focus {
-  outline:none!important;
-  background-color: white;
-  color: black;
-}
-
-#emailCopyButton {
-  padding: 10px;
-  color: white;
-  border-radius: 256px;
-}
-
-#emailCopyButton i {
-  transition: color 0.25s;
-}
-
-.outerFooter {
-  background-color: #222222;
-}
-
-.Footer {
-  text-align: center;
-  height: 4em;
-  line-height: 4em;
-}
-
-.Footer h2 {
-  margin: 0;
-}
-
-.Example h1 {
-  font-weight: 700;
-}
-
-.Example h2 {
-  font-weight: 500;
-}
-
-.Example img {
-  filter: brightness(1) blur(0px);
-  transition: 0.5s all ease-in-out;
-  min-width: 50%;
-  height: auto;
-}
-
-.Example img:hover {
-  filter: brightness(1.25);
-}
-
-.Example img:active {
-  filter: brightness(0.5) blur(16px);
-  transition: 0.1s filter ease-in-out;
-}
-
-#contactBox {
-  flex-grow: 2;
-}
-
-#contactLinks {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between  ;
-}
-
-#contactLinks .buttonWrapper {
-  flex-wrap: wrap;
-}
-
-#emailBox {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 1.5em;
-  gap: 1em;
-}
-
-#emailButton {
-  min-width: 10em;
-  padding: 1.25em 0em;
-}
-
-#resumeButton {
-  min-width: 10em;
-  padding: 1.25em 0em;
-}
-
-#reactLink:hover #reactIcon {
-  transition: transform 0.5s;
-}
-
-#reactLink:hover #reactIcon {
-  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 700px) {
@@ -337,21 +108,8 @@ a:hover {
     max-width: 500px;
   }
 
-  .Navbar {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .Navbar .Links li {
-    float: left;
-  }
-
   .flex-container {
     flex-direction: column;
-  }
-
-  .About .flex-container {
-    flex-direction: column-reverse;
   }
 
   .flex-container img {
@@ -361,30 +119,5 @@ a:hover {
 
   .sectionHeader {
     text-align: center;
-  }
-
-  .Contact .flex-container {
-    flex-direction: column-reverse;
-  }
-
-  #contactBox {
-    min-width: 100%
-  }
-
-  #contactLinks {
-    flex-direction: row;
-  }
-
-  #emailBox {
-    flex-direction: column;
-  }
-
-  #contactLinks .buttonWrapper {
-    flex-direction: column;
-  }
-
-  .Footer {
-    height: auto;
-    line-height: 2em;
   }
 }
