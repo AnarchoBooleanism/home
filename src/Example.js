@@ -4,23 +4,23 @@ const Example = (props) => {
     const example = props.examples;
 
     return (
-      <div className="Example">
+      <div className="example-container">
         <div className="flex-container">
             <div>
                 <h1>{ example.title }</h1>
                 <h2>{ example.subtitle }</h2>
                 <p>{ example.description }</p>
                 <p>{ example.extraText }</p>
-                <div class="buttonWrapper">
+                <div className="button-wrapper">
                 { example.links.map((link) => (
-                    <a href={ link.url } className="linkButton">{ link.title }</a>
+                    <a href={ link.url } className="link-button">{ link.title }</a>
                 )) }
                 </div>
             </div>
             <div>
                 <a href={ example.links[0].url }>
                     <div>
-                        <div class="imageBox">
+                        <div className="image-box">
                             <img src={ example.image } alt="Project example"></img>
                         </div>
                     </div>

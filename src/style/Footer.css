@@ -1,27 +1,28 @@
-.outerFooter {
+.footer-container {
   background-color: #222222;
 }
 
-.Footer {
+.footer-container__content {
   text-align: center;
   height: 4em;
   line-height: 4em;
 }
 
-.Footer h2 {
+.footer-container__content h2 {
   margin: 0;
 }
 
-#reactLink:hover #reactIcon {
+.react-link__icon {
   transition: transform 0.5s;
+  margin: 0em 0.2em;
 }
 
-#reactLink:hover #reactIcon {
+.react-link:hover .react-link__icon {
   transform: rotate(180deg);
 }
 
 @media screen and (max-width: 700px) {
-  .Footer {
+  .footer-container__content {
     height: auto;
     line-height: 2em;
   }

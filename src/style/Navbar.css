@@ -1,4 +1,4 @@
-.Navbar {
+.navbar-container__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6,17 +6,17 @@
   font-weight: 500;
 }
   
-.Navbar h1 {
+.navbar-container__content h1 {
   font-weight: 700;
   text-align: center;
 }
   
-.Navbar a {
+.navbar-container__content a {
   color: white;
   text-decoration: none;
 }
   
-.Navbar .Links {
+.navbar-container__content__links {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -24,11 +24,11 @@
   display: flex;
 }
   
-.Navbar .Links li {
+.navbar-container__content__links li {
   float: right;
 }
   
-.Navbar .Links li a {
+.navbar-container__content__links li a {
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -36,21 +36,21 @@
   border-radius: 32px;
 }
   
-.Navbar .Links li a:hover {
+.navbar-container__content__links li a:hover {
   background-color: rgba(0,0,0,0.3);
 }
   
-.Navbar .Links li a:active {
+.navbar-container__content__links li a:active {
   background-color: rgba(0,0,0,0.5);
 }
 
 @media screen and (max-width: 700px) {
-  .Navbar {
+  .navbar-container__content {
     flex-direction: column;
     height: auto;
   }
 
-  .Navbar .Links li {
+  .navbar-container__content__links li {
     float: left;
   }
 }

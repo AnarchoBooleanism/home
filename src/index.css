@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-.viewArea {
+.view-area {
   max-width: 1150px;
 	margin: 0 auto !important;
 	float: none !important;
@@ -48,7 +48,7 @@ a:hover {
   transition: 0.5s all ease-in-out;
 }
 
-.flex-container .imageBox {
+.flex-container .image-box {
   overflow: hidden;
   display: flex;
   filter: drop-shadow(0 0 0.25em black);
@@ -57,7 +57,7 @@ a:hover {
   margin: 0;
 }
 
-.flex-container .imageBox:hover {
+.flex-container .image-box:hover {
   filter: drop-shadow(0 0 0.5em black);
 }
 
@@ -65,7 +65,7 @@ a:hover {
   transform: scale(1.3);
 }
 
-.linkButton {
+.link-button {
   padding: 1.5em 1em;
   margin: 0.25em 0em;
   background-color: rgba(255,255,255,0.2);;
@@ -77,34 +77,34 @@ a:hover {
   border-radius: 128px;
 }
 
-.linkButton:hover {
+.link-button:hover {
   text-decoration: none;
   background-color: white;
   color: black;
 }
 
-.linkButton:active {
+.link-button:active {
   text-decoration: none;
   background-color: rgba(255,255,255,0.6);
   color: black;
 }
 
-.buttonWrapper {
+.button-wrapper {
   display: flex;
   justify-content: space-around;  
 }
 
-.sectionHeader {
+.section-header {
   font-size: 3.5em;
   margin: 0;
 }
 
-.outerContact {
+.contact-container-background {
   background-image: url("./assets/code_pic1.jpg");
 }
 
 @media screen and (max-width: 700px) {
-  .viewArea {
+  .view-area {
     max-width: 500px;
   }
 
@@ -117,7 +117,7 @@ a:hover {
     max-height: 100vh;
   }
 
-  .sectionHeader {
+  .section-header {
     text-align: center;
   }
 }

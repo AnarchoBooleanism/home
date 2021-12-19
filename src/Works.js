@@ -9,9 +9,9 @@ const Works = () => {
     ]);
 
     return (
-      <div className="outerWorks">
-        <div className="viewArea Works" id="works">
-          <h1 class="sectionHeader">Works</h1>
+      <div className="works-container">
+        <div className="view-area works-container__content">
+          <h1 className="section-header">Works</h1>
           <h3>Here are some projects I have worked on:</h3>
           { examples.map((example) => (
               <Example examples={ example } key={ example.id } />

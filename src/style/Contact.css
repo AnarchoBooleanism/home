@@ -1,21 +1,21 @@
-.outerContact {
+.contact-container-background {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.contactBackground {
+.contact-container {
   background-color: rgba(0,0,0,0.5);
   backdrop-filter: blur(4px);
 }
 
-.Contact .flex-container {
+.contact_container__content .flex-container {
   min-height: calc(100vh - 6em);
   padding: 1em 0em;
   width: 100%;
 }
 
-#emailCopier {
+.email-copier-container {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -26,31 +26,31 @@
   transition: background-color 0.25s;
 }
 
-#emailCopier:hover {
+.email-copier-container:hover {
   background-color: white;
 }
 
-#emailCopier:hover #emailCopyBox {
+.email-copier-container:hover .email-copier-container__text {
   color: black;
 }
 
-#emailCopier:hover #emailCopyButton i {
+.email-copier-container:hover .email-copier-container__icon i {
   color: black;
 }
 
-#emailCopier:active #emailCopyBox {
+.email-copier-container:active .email-copier-container__text {
   color: black;
 }
 
-#emailCopier:active #emailCopyButton i {
+.email-copier-container:active .email-copier-container__icon i {
   color: black;
 }
 
-#emailCopier:active {
+.email-copier-container:active {
   background-color: rgba(255,255,255,0.6);
 }
 
-#emailCopyBox {
+.email-copier-container__text {
   line-height: 5.5em;
   color: white;
   box-shadow: none;
@@ -62,43 +62,43 @@
   transition: background-color 0.25s, color 0.25s;
 }
 
-#emailCopyBox:hover {
+.email-copier-container__text:hover {
   outline:none!important;
   background-color: white;
   color: black;
 }
 
-#emailCopyBox:focus {
+.email-copier-container__text:focus {
   outline:none!important;
   background-color: white;
   color: black;
 }
 
-#emailCopyButton {
+.email-copier-container__icon {
   padding: 10px;
   color: white;
   border-radius: 256px;
 }
 
-#emailCopyButton i {
+.email-copier-container__icon i {
   transition: color 0.25s;
 }
 
-#contactBox {
+.contact-info-container {
   flex-grow: 2;
 }
 
-#contactLinks {
+.contact-info-container__links {
   display: flex;
   flex-direction: column;
-  justify-content: space-between  ;
+  justify-content: space-between;
 }
 
-#contactLinks .buttonWrapper {
+.button-wrapper--contact-info {
   flex-wrap: wrap;
 }
 
-#emailBox {
+.contact-info-container__links__priority-links {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -106,34 +106,34 @@
   gap: 1em;
 }
 
-#emailButton {
+.link-button--email {
   min-width: 10em;
   padding: 1.25em 0em;
 }
 
-#resumeButton {
+.link-button--resume {
   min-width: 10em;
   padding: 1.25em 0em;
 }
 
 @media screen and (max-width: 700px) { 
-  .Contact .flex-container {
+  .contact_container__content .flex-container {
     flex-direction: column-reverse;
   }
 
-  #contactBox {
+  .contact-info-container {
     min-width: 100%
   }
 
-  #contactLinks {
+  .contact-info-container__links {
     flex-direction: row;
   }
 
-  #emailBox {
+  .contact-info-container__links__priority-links {
     flex-direction: column;
   }
 
-  #contactLinks .buttonWrapper {
+  .button-wrapper--contact-info {
     flex-direction: column;
   }
 }

@@ -1,8 +1,8 @@
-#works {
+.works-container__content {
   padding: 0;
 }
 
-.outerWorks {
+.works-container {
   min-height: calc(100vh - 2em);
   padding: 1em 1em;
   display: flex;

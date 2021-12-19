@@ -1,23 +1,23 @@
-.Example h1 {
+.example-container-container h1 {
   font-weight: 700;
 }
 
-.Example h2 {
+.example-container h2 {
   font-weight: 500;
 }
 
-.Example img {
+.example-container img {
   filter: brightness(1) blur(0px);
   transition: 0.5s all ease-in-out;
   min-width: 50%;
   height: auto;
 }
 
-.Example img:hover {
+.example-container img:hover {
   filter: brightness(1.25);
 }
 
-.Example img:active {
+.example-container img:active {
   filter: brightness(0.5) blur(16px);
   transition: 0.1s filter ease-in-out;
 }

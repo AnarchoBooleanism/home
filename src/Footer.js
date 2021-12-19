@@ -2,9 +2,9 @@ import './style/Footer.css'
 
 const Footer = () => {
     return (
-      <div className="outerFooter">
-        <div className="viewArea Footer">
-          <h2><a href="https://reactjs.org/" id="reactLink"><i class="fab fa-react" id="reactIcon"></i> Made with React!</a> Copyright: Nathan Guerrero, 2021.</h2>
+      <div className="footer-container">
+        <div className="view-area footer-container__content">
+          <h2><a href="https://reactjs.org/" className="react-link"><i className="fab fa-react react-link__icon"></i>Made with React!</a> Copyright: Nathan Guerrero, 2021.</h2>
         </div>
       </div>
     );

@@ -3,31 +3,31 @@ import './style/Contact.css'
 
 const Contact = () => {
     return (
-      <div className="outerContact">
-        <div className="contactBackground">
-          <div className="viewArea Contact">
+      <div className="contact-container-background">
+        <div className="contact-container">
+          <div className="view-area contact_container__content">
             <div className="flex-container">
               <div>
-                <div class="imageBox">
+                <div className="image-box">
                   <img src={ codePic } alt="Programming on my laptop"></img>
                 </div>
               </div>
-              <div id="contactBox">
-                <h1 class="sectionHeader">Contact</h1>
+              <div className="contact-info-container">
+                <h1 className="section-header">Contact</h1>
                 <h2>Interested? Here you go:</h2>
-                <div id="contactLinks">
-                  <div id="emailBox">
-                    <a className="linkButton" id="emailButton" href="mailto:naguerr2@uci.edu">Email me!</a>
-                    <a className="linkButton" id="resumeButton" href="">Resume</a>
+                <div className="contact-info-container__links">
+                  <div className="contact-info-container__links__priority-links">
+                    <a className="link-button link-button--email" href="mailto:naguerr2@uci.edu">Email me!</a>
+                    <a className="link-button link-button--resume" href="">Resume</a>
                   </div>
-                  <div class="buttonWrapper">
-                    <div id="emailCopier">
-                      <input id="emailCopyBox" type="email" value="naguerr2@uci.edu" readonly></input>
-                      <a id="emailCopyButton" onClick={() =>  navigator.clipboard.writeText('naguerr2@uci.edu')}><i class="far fa-copy"></i></a>
+                  <div className="button-wrapper button-wrapper--contact-info">
+                    <div className="email-copier-container">
+                      <input className="email-copier-container__text" type="email" value="naguerr2@uci.edu" readonly></input>
+                      <a className="email-copier-container__icon" onClick={() =>  navigator.clipboard.writeText('naguerr2@uci.edu')}><i className="far fa-copy"></i></a>
                     </div>  
-                    <a className="linkButton" href="https://github.com/AnarchoBooleanism"><i className="fab fa-github"></i> GitHub</a>
-                    <a className="linkButton" href="https://www.linkedin.com/in/nathan-guerrero-89a41919b/"><i className="fab fa-linkedin-in"></i> LinkedIn</a>
-                    <a className="linkButton" href="https://uci.joinhandshake.com/users/33173069">Handshake</a>
+                    <a className="link-button" href="https://github.com/AnarchoBooleanism"><i className="fab fa-github"></i> GitHub</a>
+                    <a className="link-button" href="https://www.linkedin.com/in/nathan-guerrero-89a41919b/"><i className="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a className="link-button" href="https://uci.joinhandshake.com/users/33173069">Handshake</a>
                   </div>
                 </div>
               </div>

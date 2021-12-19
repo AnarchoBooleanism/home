@@ -2,10 +2,10 @@ import "./style/Navbar.css"
 
 const Navbar = () => {
     return (
-      <div className="outerNavbar" id="about">
-        <div className="viewArea Navbar">
+      <div className="navbar-container" id="about">
+        <div className="view-area navbar-container__content">
           <a href="/home/"><h1>Nathan Guerrero</h1></a>
-          <ul className="Links">
+          <ul className="navbar-container__content__links">
               <li><a href="#about">About Me</a></li>
               <li><a href="#works">Works</a></li>
               <li><a href="#contact">Contact</a></li>
