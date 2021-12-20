@@ -1,4 +1,4 @@
-import './style/Example.css'
+import './style/Example.css';
 
 const Example = (props) => {
     const example = props.examples;

@@ -1,5 +1,5 @@
-import codePic from './assets/code_pic1.jpg';
-import './style/Contact.css'
+import Map from './Map.js';
+import './style/Contact.css';
 
 const Contact = () => {
     return (
@@ -8,9 +8,8 @@ const Contact = () => {
           <div className="view-area contact_container__content">
             <div className="flex-container">
               <div>
-                <div className="image-box">
-                  <img src={ codePic } alt="Programming on my laptop"></img>
-                </div>
+                <Map />
+                <p className="contact-location-info">University of California, Irvine<br /> Irvine, CA 92697</p>
               </div>
               <div className="contact-info-container">
                 <h1 className="section-header">Contact</h1>
