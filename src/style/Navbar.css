@@ -44,6 +44,18 @@
   background-color: rgba(0,0,0,0.5);
 }
 
+#skip-nav-link {
+  position: absolute;
+  transform: translateY(-500%);
+  transition: transform 200ms;
+  background-color: white;
+  color: black;
+}
+
+#skip-nav-link:focus {
+  transform: translateY(0);
+}
+
 @media screen and (max-width: 700px) {
   .navbar-container__content {
     flex-direction: column;
