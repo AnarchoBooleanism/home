@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import './style/Map.css';
 

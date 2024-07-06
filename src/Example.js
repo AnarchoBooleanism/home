@@ -1,3 +1,4 @@
+import React from 'react';
 import './style/Example.css';
 
 const Example = (props) => {
