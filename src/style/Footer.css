@@ -3,8 +3,6 @@
 }
 
 .footer-container__content {
-  padding-top: .5em;
-  padding-bottom: .5em;
   text-align: center;
   height: 4em;
   line-height: 4em;
@@ -25,6 +23,8 @@
 
 @media screen and (max-width: 700px) {
   .footer-container__content {
+    padding-top: 1em;
+    padding-bottom: 1em;
     height: auto;
     line-height: 2em;
   }

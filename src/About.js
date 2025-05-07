@@ -7,7 +7,7 @@ const About = () => {
       <div className="about-container">
         <div className="view-area about-container__content">
           <div className="flex-container flex-container--about">
-            <div>
+            <div className="image-box-container--about">
               <div className="image-box">
                 <img src={ facePic } alt="A selfie of mine"></img>
               </div>
