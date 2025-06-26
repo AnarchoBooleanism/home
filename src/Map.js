@@ -18,7 +18,7 @@ const Map = () => {
         lat: 32.715736,
         lng: -117.161087
         },
-        zoom: 14
+        zoom: 11
     });
 
     return (
