@@ -10,7 +10,7 @@ const Contact = () => {
             <div className="flex-container">
               <div>
                 <Map />
-                <p className="contact-location-info">University of California, Irvine<br /> Irvine, CA 92697</p>
+                <p className="contact-location-info">San Diego, CA, United States</p>
               </div>
               <div className="contact-info-container">
                 <h1 className="section-header">Contact</h1>

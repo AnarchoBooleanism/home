@@ -14,10 +14,10 @@ const About = () => {
             </div>
             <div>
               <h1 className="section-header">About Me (Hello!)</h1>
-              <h2 className="section-subheader">I am Nathan Guerrero, a Computer Science student at the University of California, Irvine (class of 2025).</h2>
-              <p>Ever since childhood, creating and tinkering with software has been a passion of mine, a passion that has followed me into college. I am persistent and highly attentive to detail. As a fourth-year, I have gained a broad range of experience, from my time in a team hackathon to my times across numerous group projects.</p>
-              <p>I am highly proficient in Python (and C/C++), have much experience in systems development, and have some experience in web development, including in React. In addition to programming, I also like to compose/produce music and game in my free time and know a bit of Japanese and Spanish.</p>
-              <p>Currently based in Irvine, CA, where I study.</p>
+              <h2 className="section-subheader">I am Nathan Guerrero, a software developer, with a B.S. in Computer Science.</h2>
+              <p>Ever since childhood, creating and tinkering with software has been a passion of mine, a passion that has followed me into college and beyond. Throughout my journey, with my persistence and my attention to detail, I have gained a broad range of experience, from my time in a team hackathon to my times across numerous group projects.</p>
+              <p>I am highly proficient in Python, C/C++, and Java, and have experience across the entire stack, from the front-end (React), to databases (SQL), to the systems-level. In addition, I like to compose/produce music and game in my free time. I also have an intermediate fluency in Spanish and Japanese.</p>
+              <p>Currently based in San Diego, CA, having graduated from the University of California, Irvine in 2025.</p>
             </div>
           </div>
         </div>

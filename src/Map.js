@@ -7,16 +7,16 @@ const Map = () => {
         let marker = new maps.Marker({
             position: location.center,
             map,
-            title: 'University of California Irvine, Irvine, CA 92697'
+            title: 'San Diego, CA'
         });
         return marker;
     };
 
     const [location, setLocation] = useState({
-        address: "University of California Irvine, Irvine, CA 92697",
+        address: "San Diego, CA",
         center: {
-        lat: 33.64020935886593,
-        lng: -117.8445310327405
+        lat: 32.715736,
+        lng: -117.161087
         },
         zoom: 14
     });
