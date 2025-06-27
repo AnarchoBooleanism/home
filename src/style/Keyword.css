@@ -1,0 +1,18 @@
+.keyword {
+    padding: 1em 1em;
+    background-color: rgba(255,255,255,0.2);;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    border-radius: 128px;
+    white-space: nowrap;
+    transition: background-color 0.25s, color 0.25s;
+    user-select: none;
+}
+
+.keyword:hover {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}

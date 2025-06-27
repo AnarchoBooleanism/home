@@ -1,11 +1,11 @@
 .works-container__content {
   padding: 0;
+  display: flex;
 }
 
 .works-container {
   min-height: calc(100vh - 2em);
   padding: 1em 1em;
-  display: flex;
   align-items: center;
   background-color: rgba(0,0,0,0.3);
 }

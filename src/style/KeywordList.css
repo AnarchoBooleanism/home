@@ -1,0 +1,31 @@
+.fadeout-horizontal {
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 2em,
+        black calc(100% - 2em),
+        transparent
+    );
+}
+
+.keywords-container {
+    overflow: clip;
+    padding: 0em 0em 2em 0em;
+}
+
+.keyword-track {
+    display: flex;
+    gap: 0.5em;
+    width: max-content;
+    animation: keywords-move-text 60s linear infinite;
+}
+
+.keyword-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes keywords-move-text {
+    to {
+        transform: translateX(-50%);
+    }
+}

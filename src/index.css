@@ -103,6 +103,9 @@ a:hover {
 .section-header {
   font-size: 3.5em;
   margin: 0;
+  background-image: linear-gradient(to bottom right, #FFFFFF, #BBBBBB);
+    color: transparent;
+    background-clip: text;
 }
 
 .contact-container-background {

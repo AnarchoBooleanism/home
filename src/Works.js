@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Example from "./Example";
+import KeywordList from './KeywordList';
 import examplePic1 from "./assets/example_pic1.png";
 import examplePic2 from "./assets/example_pic2.png";
 import examplePic3 from "./assets/example_pic3.png";
@@ -14,12 +15,15 @@ const Works = () => {
 
     return (
       <div className="works-container">
-        <div className="view-area works-container__content">
-          <h1 className="section-header">Works</h1>
-          <h3 className="section-subheader">Here are some projects I have worked on:</h3>
-          { examples.map((example) => (
-              <Example examples={ example } key={ example.id } />
-          )) }
+        <KeywordList />
+        <div className="works-container__content">
+          <div className="view-area">
+            <h1 className="section-header">Works</h1>
+            <h3 className="section-subheader">Here are some projects I have worked on:</h3>
+            { examples.map((example) => (
+                <Example examples={ example } key={ example.id } />
+            )) }
+          </div>
         </div>
       </div>
     );
