@@ -6,9 +6,14 @@ import examplePic2 from "./assets/example_pic2.png";
 import examplePic3 from "./assets/example_pic3.png";
 import examplePic4 from "./assets/example_pic4.png";
 import examplePic5 from "./assets/example_pic5.png";
+import specialExamplePic1 from "./assets/specialexample_pic1.jpg";
 import './style/Works.css'
 
 const Works = () => {
+    const [specialExamples, setSpecialExamples] = useState([
+      { title: "Sapphic Homelab/Home Server (2024-present)", subtitle: "Personal project", description: "I'm an avid homelab enthusiast. What started as a simple Home Assistant instance on an old laptop quickly grew into a new hobby and a passion for hosting various services and experimenting with different technologies. Nowadays, with the many additions of used hardware, this homelab/home server is closer to a \"mini-datacenter\", performing a variety of tasks, from hosting experiments, to file storage and remote development.", extraText: "Through this journey, and many dozens of hours of debugging and problem solving, I've gained hands-on experience in optimizing network configurations with OpenWrt and special hardware, leveraging Proxmox and Linux for virtual machines and containers, and building clustered environments. This has given me extensive experience in deployment and web administration, all while creating a highly functional and evolving home IT infrastructure from diverse hardware.", image: specialExamplePic1, links: [{title: "Demonstration", url: "https://www.youtube.com/watch?v=hI5Pl6_dHzY"}], id: 0 }
+    ]);
+
     const [examples, setExamples] = useState([
       { title: "ICS Indexer & Search Engine (2025)", subtitle: "Team member", description: "Developed for a project class, COMPSCI 121, in a group of 4, written in Python. It is an all-in-one solution for indexing and searching through a massive set of webpages, being able to handle search requests within 100 ms under harsh operational constraints. I was responsible for designing the object-oriented structure of the program and developing the core databases and algorithms.", extraText: "Challenges: To meet the 100 ms performance requirement, my team and I focused on creating highly efficient, resource-optimized algorithms. We implemented multithreading, partial indexes with custom merging algorithms, and various reverse index data structures to handle and process large volumes of data effectively.", image: examplePic5, links: [{title: "Demonstration", url: "https://www.youtube.com/watch?v=Z32PKIDwycE"}], id: 5 },
       { title: "Python + MySQL Database Manager (2025)", subtitle: "Back-end developer", description: "Created for a class, COMPSCI 122A, in a group of 3, written in Python and SQL. This project is a database manager for the fictional \"ZotStreaming\" platform, representing the platform's various components—like users, shows, and episodes—as interconnected tables. My primary role involved translating user requests and data additions into precise SQL queries and formatting the query results into clear, readable outputs. I also took the lead in setting up our development environment, utilizing VS Code Dev Containers and Docker to ensure a consistent and portable workspace.", extraText: "Challenges: As I was relatively new to SQL, mastering its syntax and ensuring the logic of my queries was correct required significant effort and numerous iterations. Additionally, connecting our Python application to a MySQL database proved to be a hurdle, requiring time for troubleshooting the development environment.", image: examplePic4, links: [{title: "Demonstration", url: "https://www.youtube.com/watch?v=_Gjxf5uKNMY"}], id: 4 },
@@ -24,6 +29,11 @@ const Works = () => {
           <div className="view-area">
             <h1 className="section-header">Works</h1>
             <h3 className="section-subheader">Here are some projects I have worked on:</h3>
+            <div className="special-works-container">
+              { specialExamples.map((specialExample) => (
+                <Example examples={ specialExample } key={ specialExample.id } />
+            )) }
+            </div>
             { examples.map((example) => (
                 <Example examples={ example } key={ example.id } />
             )) }
