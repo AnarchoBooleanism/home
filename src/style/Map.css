@@ -5,7 +5,7 @@
   max-width: calc(100vw - 575px)
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 980px) {
   .map {
     width: calc(100vw - 2em);
     height: 90vh;

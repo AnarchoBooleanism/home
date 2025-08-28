@@ -4,12 +4,13 @@ import './style/KeywordList.css';
 
 const KeywordList = () => {
     const [keywords, setKeywords] = useState([
-        "Python", "C", "Java", "C++", "JavaScript", "React", "Bash", "Scripting",
-        "Git", "Linux", "Ubuntu", "Proxmox", "Docker", "Containerization", "Virtual Machines",
+        "Python", "C", "Java", "C++", "JavaScript", "React", "Node.js", "Bash", "Scripting",
+        "Git", "Linux", "Debian", "Ubuntu", "Proxmox", "Docker", "Containerization", "Virtual Machines", "QEMU",
         "DevOps", "Networking", "Web Deployment", "Databases", "SQL",
-        "Search Engines", "Indexing", "Systems Development", "Automation", "Cybersecurity",
-        "x86 Assembly", "APIs", "Multiprocessing", "Distributed Systems", "Software Design",
-        "Object-Oriented Programming", "Functional Programming", "Full Stack Development"
+        "Search Engines", "Indexing", "Systems Development", "System Administration", "Automation", "Cybersecurity",
+        "x86 Assembly", "Compilers", "APIs", "Multiprocessing", "Distributed Systems", "Software Design",
+        "Object-Oriented Programming", "Functional Programming", "Full Stack Development", "Big Data",
+        "Remote Development", "SSH"
     ]);
 
     return (

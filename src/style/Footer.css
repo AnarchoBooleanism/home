@@ -21,7 +21,7 @@
   transform: rotate(180deg);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 980px) {
   .footer-container__content {
     padding-top: 1em;
     padding-bottom: 1em;
