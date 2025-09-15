@@ -21,7 +21,7 @@ const Contact = () => {
                       <input className="email-copier-container__text" type="text" value="anarchbool@anarchbool.dev" readonly></input>
                       <a className="email-copier-container__icon" onClick={() =>  navigator.clipboard.writeText('anarchbool@anarchbool.dev')}><i className="far fa-copy"></i></a>
                     </div>  
-                    <a className="link-button link-button--resume" href="/resumes/se_20250827a.pdf">Resume</a>
+                    <a className="link-button link-button--resume" href="/resumes/se_20250827b.pdf">Resume</a>
                   </div>
                   <div className="button-wrapper button-wrapper--contact-info">
                     <a className="link-button" href="https://github.com/AnarchoBooleanism"><i className="fab fa-github"></i> GitHub</a>
