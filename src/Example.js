@@ -22,12 +22,12 @@ const Example = (props) => {
                 <p>{ example.extraText }</p>
                 <div className="button-wrapper">
                 { example.links.map((link) => (
-                    <a href={ link.url } className="link-button">{ link.title }</a>
+                    <a href={ link.url } target="_blank" rel="noreferrer" className="link-button">{ link.title }</a>
                 )) }
                 </div>
             </div>
             <div>
-                <a href={ example.links[0].url }>
+                <a href={ example.links[0].url } target="_blank" rel="noreferrer">
                     <div>
                         <div className="image-box">
                             <img src={ example.image } alt="Project example"></img>

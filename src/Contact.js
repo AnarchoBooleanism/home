@@ -21,12 +21,12 @@ const Contact = () => {
                       <input className="email-copier-container__text" type="text" value="anarchbool@anarchbool.dev" readonly></input>
                       <a className="email-copier-container__icon" onClick={() =>  navigator.clipboard.writeText('anarchbool@anarchbool.dev')}><i className="far fa-copy"></i></a>
                     </div>  
-                    <a className="link-button link-button--resume" href="/resumes/se_20250827b.pdf">Resume</a>
+                    <a className="link-button link-button--resume" href="/resumes/se_20250827b.pdf" target="_blank" rel="noreferrer">Resume</a>
                   </div>
                   <div className="button-wrapper button-wrapper--contact-info">
-                    <a className="link-button" href="https://github.com/AnarchoBooleanism"><i className="fab fa-github"></i> GitHub</a>
-                    <a className="link-button" href="https://www.linkedin.com/in/nathan-guerrero-89a41919b/"><i className="fab fa-linkedin-in"></i> LinkedIn</a>
-                    <a className="link-button" href="https://uci.joinhandshake.com/users/33173069">Handshake</a>
+                    <a className="link-button" href="https://github.com/AnarchoBooleanism" target="_blank" rel="noreferrer"><i className="fab fa-github"></i> GitHub</a>
+                    <a className="link-button" href="https://www.linkedin.com/in/nathan-guerrero-89a41919b/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a className="link-button" href="https://uci.joinhandshake.com/users/33173069" target="_blank" rel="noreferrer">Handshake</a>
                   </div>
                 </div>
               </div>
