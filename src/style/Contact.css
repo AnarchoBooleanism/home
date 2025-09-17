@@ -83,6 +83,10 @@
   padding: 10px;
   color: white;
   border-radius: 256px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .email-copier-container__icon i {

@@ -6,6 +6,8 @@ import Contact from './Contact';
 import Footer from './Footer';
 
 function App() {
+  // Note: About has an id of both "about" and "main-content", so that main-content can be skipped to
+
   return (
     <div className="App">
       <Navbar />

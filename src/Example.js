@@ -5,11 +5,12 @@ const Example = (props) => {
     const example = props.examples;
 
     // Code to determine whether something is flipped
+    var containerType;
     if (example.id % 2 === 0) {
-        var containerType = "flex-container flex-container--flipped";
+        containerType = "flex-container flex-container--flipped";
     }
     else {
-        var containerType = "flex-container";
+        containerType = "flex-container";
     }
 
     return (
@@ -22,12 +23,12 @@ const Example = (props) => {
                 <p>{ example.extraText }</p>
                 <div className="button-wrapper">
                 { example.links.map((link) => (
-                    <a href={ link.url } target="_blank" rel="noreferrer" className="link-button">{ link.title }</a>
+                    <a href={ link.url } target="_blank" rel="noopener noreferrer" className="link-button">{ link.title }</a>
                 )) }
                 </div>
             </div>
             <div>
-                <a href={ example.links[0].url } target="_blank" rel="noreferrer">
+                <a href={ example.links[0].url } target="_blank" rel="noopener noreferrer">
                     <div>
                         <div className="image-box">
                             <img src={ example.image } alt="Project example"></img>
