@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, rgba(0,71,62,1) 0%, rgba(0,68,2,1) 100%);
+  background: linear-gradient(135deg, rgb(0, 109, 94) 0%, rgb(0,68,2) 50%, rgb(136, 82, 0) 100%);
   color: white;
   margin: 0;
 }
