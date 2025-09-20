@@ -6,13 +6,34 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    container:
-      image: node:22
     steps:
-      - uses: actions/checkout@v5
-      - run: npm ci
-      - run: CI=false npm run build
-      # - run: CI=false npm run test # To be added when tests are added
-      - run: CI=false npm run deploy
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+      - name: Clean install Node.js dependencies
+        run: npm ci
+      - name: Build package with Node.js
+        run: CI=false npm run build # CI=false to ignore warnings
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifact
+          path: build/
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: build-artifact
