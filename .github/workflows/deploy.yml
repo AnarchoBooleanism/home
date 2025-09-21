@@ -18,7 +18,7 @@ jobs:
       - name: Build package with Node.js
         run: CI=false npm run build # CI=false to ignore warnings
       - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v4
         with:
           name: build-artifact
           path: build/
