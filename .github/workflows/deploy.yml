@@ -5,6 +5,8 @@ on:
     branches:
       - main
 
+# NOTE: Make sure, in your environment secrets page, that "REACT_APP_GOOGLE_KEY" is set!
+
 jobs:
   build:
     runs-on: ubuntu-latest
