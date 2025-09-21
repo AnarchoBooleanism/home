@@ -10,6 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: build # Be sure to set your environment here that has "REACT_APP_GOOGLE_KEY"
     steps:
       - name: Checkout
         uses: actions/checkout@v5
