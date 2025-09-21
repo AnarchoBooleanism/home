@@ -18,7 +18,7 @@ jobs:
       - name: Clean install Node.js dependencies
         run: npm ci
       - name: Build package with Node.js
-        run: CI=false npm run build # CI=false to ignore warnings
+        run: CI=false REACT_APP_GOOGLE_KEY=${{ secrets.REACT_APP_GOOGLE_KEY }} npm run build # CI=false to ignore warnings
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v4
         with:
