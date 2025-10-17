@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+USEFUL COMMAND FOR UPDATING: `sudo npm i -g npm-check-updates && ncu -u && npm i`
+
+**TODO**: Move away from create-react-app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
