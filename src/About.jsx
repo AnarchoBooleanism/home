@@ -8,7 +8,7 @@ const About = () => {
           <div className="flex-container flex-container--about">
             <div className="image-box-container--about">
               <div className="image-box">
-                <img src="/assets/face_pic1.jpg" alt="A selfie of mine"></img>
+                <img src={ import.meta.env.BASE_URL + "/assets/face_pic1.jpg" } alt="A selfie of mine"></img>
               </div>
             </div>
             <div>
