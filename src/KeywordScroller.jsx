@@ -1,5 +1,5 @@
 import React from "react";
-import Keyword from "./Keyword";
+import Keyword from "./Keyword.jsx";
 import './style/KeywordList.css';
 
 const KeywordScroller = (props) => {

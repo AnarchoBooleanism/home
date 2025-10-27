@@ -1,5 +1,5 @@
 import React from 'react';
-import Map from './Map.js';
+import Map from './Map.jsx';
 import './style/Contact.css';
 
 const Contact = () => {
@@ -38,6 +38,3 @@ const Contact = () => {
   }
 
 export default Contact;
-
-// Todo: Copy button, example:
-// <a id="emailText" onClick={() =>  navigator.clipboard.writeText('naguerr2@uci.edu')}><p>naguerr2@uci.edu</p></a>

@@ -1,5 +1,4 @@
 import React from 'react';
-import facePic from './assets/face_pic1.jpg';
 import './style/About.css';
 
 const About = () => {
@@ -9,7 +8,7 @@ const About = () => {
           <div className="flex-container flex-container--about">
             <div className="image-box-container--about">
               <div className="image-box">
-                <img src={ facePic } alt="A selfie of mine"></img>
+                <img src="/assets/face_pic1.jpg" alt="A selfie of mine"></img>
               </div>
             </div>
             <div>

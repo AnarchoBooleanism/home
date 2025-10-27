@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import './style/Map.css';
 
+const googleApiKey = import.meta.env.VITE_GOOGLE_KEY;
+
 const Map = () => {
     const renderMarkers = (map, maps) => {
         let marker = new maps.Marker({
@@ -24,7 +26,7 @@ const Map = () => {
     return (
         <div className="map">
             <GoogleMapReact
-                bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_KEY }}
+                bootstrapURLKeys={{ key: googleApiKey }}
                 defaultCenter={ location.center }
                 defaultZoom={ location.zoom }
                 yesIWantToUseGoogleMapApiInternals

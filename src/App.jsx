@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from './Navbar';
-import About from './About';
-import Works from './Works';
-import Contact from './Contact';
-import Footer from './Footer';
+import Navbar from './Navbar.jsx';
+import About from './About.jsx';
+import Works from './Works.jsx';
+import Contact from './Contact.jsx';
+import Footer from './Footer.jsx';
 
 function App() {
   // Note: About has an id of both "about" and "main-content", so that main-content can be skipped to

@@ -5,13 +5,13 @@ on:
     branches:
       - main
 
-# NOTE: Make sure, in your environment secrets page, that "REACT_APP_GOOGLE_KEY" is set!
+# NOTE: Make sure, in your environment secrets page, that "VITE_GOOGLE_KEY" is set!
 
 jobs:
   build:
     runs-on: ubuntu-latest
     environment:
-      name: build # Be sure to set your environment here that has "REACT_APP_GOOGLE_KEY"
+      name: build # Be sure to set your environment here that has "VITE_GOOGLE_KEY"
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -23,7 +23,7 @@ jobs:
         run: npm run build # CI=false to ignore warnings
         env:
           CI: false
-          REACT_APP_GOOGLE_KEY: ${{ secrets.REACT_APP_GOOGLE_KEY }}
+          REACT_APP_GOOGLE_KEY: ${{ secrets.VITE_GOOGLE_KEY }}
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v4
         with:

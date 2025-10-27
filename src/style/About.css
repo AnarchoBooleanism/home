@@ -14,5 +14,10 @@
 @media screen and (max-width: 980px) {
   .flex-container--about {
     flex-direction: column-reverse;
+    min-height: 0;
+  }
+
+  .image-box-container--about img {
+    max-height: 600px;
   }
 }

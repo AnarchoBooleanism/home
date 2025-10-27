@@ -109,7 +109,7 @@ a:hover {
 }
 
 .contact-container-background {
-  background-image: url("./assets/code_pic1.jpg");
+  background-image: url("/assets/code_pic1.jpg");
 }
 
 @media screen and (max-width: 980px) {
