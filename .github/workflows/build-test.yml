@@ -1,0 +1,27 @@
+name: Ensure pull requests build with changes
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+    branches:
+      - main
+    paths-ignore:
+      - '.github/**' # Avoid issues with Dependabot
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+      - name: Clean install Node.js dependencies
+        run: npm ci
+      - name: Build package with Node.js
+        run: npm run build # CI=false to ignore warnings
+        env:
+          CI: false
