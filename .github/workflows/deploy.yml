@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - '.github/**' # Only consider paths directly relevant to the build
+      - 'README.md'
 
 # NOTE: Make sure, in your environment secrets page, that "VITE_GOOGLE_KEY" is set!
 
