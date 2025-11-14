@@ -1,6 +1,6 @@
 // List of keywords representing concepts, skills, etc., to be listed
 const keywordList = [
-    "Python", "C", "Java", "C++", "JavaScript", "React", "Node.js", "Bash", "Scripting",
+    "Python", "C", "Java", "C++", "JavaScript", "React", "Node.js", "Bash", "Scripting", "Ansible", "Nix", "Infrastructure as Code",
     "Git", "Linux", "NixOS", "Debian", "Ubuntu", "Proxmox", "Docker", "Containerization", "Virtual Machines", "QEMU",
     "Continuous Integration", "Continuous Delivery", "DevOps", "Networking", "Web Deployment", "Databases", "SQL",
     "Search Engines", "Indexing", "Systems Development", "Systems Administration", "Automation", "Cybersecurity",

@@ -21,7 +21,7 @@ const Contact = () => {
                       <input className="email-copier-container__text" type="text" value="anarchbool@anarchbool.dev" readonly autocomplete="off" data-1p-ignore data-lpignore="true" data-protonpass-ignore="true"></input>
                       <button className="email-copier-container__icon" onClick={() =>  navigator.clipboard.writeText('anarchbool@anarchbool.dev')} ><i className="far fa-copy"></i></button>
                     </div>  
-                    <a className="link-button link-button--resume" href="/resumes/se_20250921a.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a className="link-button link-button--resume" href="/resumes/se_20251113a.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                   </div>
                   <div className="button-wrapper button-wrapper--contact-info">
                     <a className="link-button" href="https://github.com/AnarchoBooleanism" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> GitHub</a>
