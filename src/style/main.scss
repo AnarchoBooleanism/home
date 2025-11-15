@@ -1,3 +1,5 @@
+@use 'constants';
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -19,11 +21,11 @@ body {
   max-width: 1200px;
 	margin: 0 auto !important;
 	float: none !important;
-  padding: 0em 1em;
+  padding: 0em constants.$view-area-padding;
 }
 
 h1 {
-  font-weight: 900;
+  font-weight: constants.$font-weight-bold;
 }
 
 a {
@@ -39,27 +41,27 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2em;
+  gap: constants.$flex-container-gap-length;
 }
 
 .flex-container img {
   max-width: 575px;
   height: 100%;
   max-height: 80vh;
-  transition: 0.5s all ease-in-out;
+  transition: constants.$transition-length-normal all ease-in-out;
 }
 
 .flex-container .image-box {
   overflow: hidden;
   display: flex;
-  filter: drop-shadow(0 0 0.25em black);
-  border-radius: 10px;
-  transition: 0.5s all ease-in-out;
+  filter: drop-shadow(0 0 constants.$drop-shadow-radius-normal black);
+  border-radius: constants.$border-radius-normal;
+  transition: constants.$transition-length-normal all ease-in-out;
   margin: 0;
 }
 
 .flex-container .image-box:hover {
-  filter: drop-shadow(0 0 0.5em black);
+  filter: drop-shadow(0 0 constants.$drop-shadow-radius-large black);
 }
 
 .flex-container img:hover {
@@ -72,15 +74,15 @@ a:hover {
 
 .link-button {
   padding: 1.5em 1em;
-  margin: 0.25em 0em;
-  background-color: rgba(255,255,255,0.2);;
+  margin: constants.$margin-smaller 0em;
+  background-color: constants.$transparency-color-light-low;
   color: white;
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  transition: background-color 0.25s, color 0.25s;
-  border-radius: 128px;
-  min-width: 8em;
+  transition: background-color constants.$transition-length-fast, color constants.$transition-length-fast;
+  border-radius: 100vh;
+  min-width: constants.$link-button-min-width;
 }
 
 .link-button:hover {
@@ -91,7 +93,7 @@ a:hover {
 
 .link-button:active {
   text-decoration: none;
-  background-color: rgba(255,255,255,0.6);
+  background-color: constants.$transparency-color-light-medium;
   color: black;
 }
 
@@ -112,7 +114,7 @@ a:hover {
   background-image: url("/assets/code_pic1.jpg");
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: constants.$screen-width-narrow) {
   .view-area {
     max-width: 700px;
   }

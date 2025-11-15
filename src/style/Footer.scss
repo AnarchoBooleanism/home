@@ -1,0 +1,33 @@
+@use 'constants';
+
+.footer-container {
+  background-image: linear-gradient(#111111, #222222);
+}
+
+.footer-container__content {
+  text-align: center;
+  height: constants.$footer-height;
+  line-height: constants.$footer-height;
+}
+
+.footer-container__content h2 {
+  margin: 0;
+}
+
+.react-link__icon {
+  transition: transform constants.$transition-length-normal;
+  margin: 0 0.2em; // Icon-specific
+}
+
+.react-link:hover .react-link__icon {
+  transform: rotate(0.5turn);
+}
+
+@media screen and (max-width: constants.$screen-width-narrow) {
+  .footer-container__content {
+    padding-top: constants.$footer-padding;
+    padding-bottom: constants.$footer-padding;
+    height: auto;
+    line-height: constants.$footer-height-line-break;
+  }
+}

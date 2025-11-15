@@ -3,7 +3,7 @@ import Example from "./Example";
 import KeywordScroller from './KeywordScroller';
 import keywordList from "./keyword_list";
 import { specialExamplesList, examplesList } from "./works_examples";
-import './style/Works.css'
+import './style/Works.scss'
 
 const Works = () => {
     return (

@@ -1,3 +1,5 @@
+@use 'constants';
+
 .map {
   width: 575px;
   height: 70vh;
@@ -5,9 +7,9 @@
   max-width: calc(100vw - 575px)
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: constants.$screen-width-narrow) {
   .map {
-    width: calc(100vw - 2em);
+    width: calc(100vw - (2 * constants.$view-area-padding));
     height: 90vh;
     max-width: 100%;
   }

@@ -1,0 +1,85 @@
+// Generally, you want to add magic numbers here if they're used multiple times or should be consistent with something else,
+// used as a component of the math for calculating some other number, or have a high potential to be either
+
+// TODO: Make the scss files more local-focused, move local-focused variables there
+
+// Global constants to use for other constants
+// Screen width constants
+$screen-width-narrowest: 700px;
+$screen-width-narrow: 980px;
+
+// Font weight sizes
+$font-weight-normal: 500;
+$font-weight-thick: 700;
+$font-weight-bold: 900;
+
+// Padding sizes
+$padding-small: 0.5em;
+$padding-normal: 1em;
+$padding-large: 2em;
+
+// Margin sizes
+$margin-smaller: 0.25em;
+$margin-small: 0.5em;
+$margin-normal: 1em;
+
+// Gap sizes
+$gap-length-normal: 0.25em;
+$gap-length-large: 0.5em;
+
+// Transition lengths (in seconds)
+$transition-length-normal: 0.5s;
+$transition-length-fast: 0.25s;
+$transition-length-fastest: 0.1s;
+
+// Transparency colors, ranked by opaqueness
+$transparency-color-dark-low: rgba(0,0,0,0.3);
+$transparency-color-dark-medium: rgba(0,0,0,0.5);
+$transparency-color-light-low: rgba(2555,255,255,0.2);
+$transparency-color-light-medium: rgba(2555,255,255,0.6);
+$transparency-color-light-high: rgba(2555,255,255,0.8);
+
+// Blur effect radii (in vh to work consistently across zooms)
+$blur-radius-small: 0.5vh;
+$blur-radius-normal: 1vh;
+
+// Brightness effect amount
+$brightness-dark: 0.5;
+$brightness-bright: 1.25;
+
+// Corner radii
+$border-radius-normal: 1em;
+
+// Drop shadow radii
+$drop-shadow-radius-normal: 0.25em;
+$drop-shadow-radius-large: 0.5em;
+
+// App-wide constants
+// View area
+$view-area-padding: $padding-normal;
+
+// Flex container
+$flex-container-gap-length: 2em;
+
+// Link button
+$link-button-min-width: 8em;
+
+// Element/section-specific constants
+// Navigation bar
+$navbar-height: 5em;
+
+// About container
+$about-container-padding: $padding-normal;
+
+// Works container
+$works-container-padding: $padding-normal;
+
+// Contact container
+$contact-container-padding: $padding-normal;
+$contact-container-priority-link-min-width: 10em;
+$contact-container-links-gap: $gap-length-normal;
+
+// Footer
+$footer-height: 4em;
+$footer-height-line-break: 2em;
+$footer-padding: $padding-normal;

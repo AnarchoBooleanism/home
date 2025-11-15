@@ -1,0 +1,29 @@
+@use 'constants';
+
+.example-container {
+  margin: 1em 0;
+}
+
+.example-container-container h1 {
+  font-weight: constants.$font-weight-thick;
+}
+
+.example-container h2 {
+  font-weight: constants.$font-weight-normal;
+}
+
+.example-container img {
+  filter: brightness(1) blur(0);
+  transition: constants.$transition-length-normal all ease-in-out;
+  min-width: 50%;
+  height: auto;
+}
+
+.example-container img:hover {
+  filter: brightness(constants.$brightness-bright);
+}
+
+.example-container img:active {
+  filter: brightness(constants.$brightness-dark) blur(constants.$blur-radius-normal);
+  transition: constants.$transition-length-fastest filter ease-in-out;
+}

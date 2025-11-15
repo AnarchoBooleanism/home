@@ -1,6 +1,6 @@
 import React from "react";
 import Keyword from "./Keyword.jsx";
-import './style/KeywordList.css';
+import './style/KeywordList.scss';
 
 const KeywordScroller = (props) => {
     const keywords = props.keywordList;

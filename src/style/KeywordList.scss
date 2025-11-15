@@ -1,3 +1,5 @@
+@use 'constants';
+
 .fadeout-horizontal {
     mask-image: linear-gradient(
         to right,
@@ -10,12 +12,12 @@
 
 .keywords-container {
     overflow: clip;
-    padding: 0em 0em 2em 0em;
+    padding: 0em 0em constants.$padding-large 0em;
 }
 
 .keyword-track {
     display: flex;
-    gap: 0.5em;
+    gap: constants.$gap-length-large;
     width: max-content;
     animation: keywords-move-text 60s linear infinite;
 }

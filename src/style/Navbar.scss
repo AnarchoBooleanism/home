@@ -1,13 +1,15 @@
+@use 'constants';
+
 .navbar-container__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5em;
-  font-weight: 500;
+  height: constants.$navbar-height;
+  font-weight: constants.$font-weight-normal;
 }
   
 .navbar-container__content h1 {
-  font-weight: 700;
+  font-weight: constants.$font-weight-thick;
   text-align: center;
 }
   
@@ -31,23 +33,23 @@
 .navbar-container__content__links li a {
   display: block;
   text-align: center;
-  padding: 14px 16px;
-  transition: 0.25s all ease-in-out;
-  border-radius: 32px;
+  padding: constants.$padding-normal constants.$padding-normal;
+  transition: constants.$transition-length-fast all ease-in-out;
+  border-radius: 100vh;
 }
   
 .navbar-container__content__links li a:hover {
-  background-color: rgba(0,0,0,0.3);
+  background-color: constants.$transparency-color-dark-low;
 }
   
 .navbar-container__content__links li a:active {
-  background-color: rgba(0,0,0,0.5);
+  background-color: constants.$transparency-color-dark-medium;
 }
 
 #skip-nav-link {
   position: absolute;
   transform: translateY(-500%);
-  transition: transform 200ms;
+  transition: transform constants.$transition-length-fast;
   background-color: white;
   color: black;
 }
@@ -56,7 +58,7 @@
   transform: translateY(0);
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: constants.$screen-width-narrow) {
   .navbar-container__content {
     flex-direction: column;
     height: auto;

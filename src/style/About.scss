@@ -1,6 +1,8 @@
+@use 'constants';
+
 .flex-container--about {
-  min-height: calc(100vh - 7em);
-  padding: 1em 0em;
+  min-height: calc(100vh - (constants.$navbar-height + (2 * constants.$about-container-padding)));
+  padding: constants.$about-container-padding 0;
 }
 
 .flex-container--about img {
@@ -11,7 +13,7 @@
   transform: rotate(-1deg);
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: constants.$screen-width-narrow) {
   .flex-container--about {
     flex-direction: column-reverse;
     min-height: 0;

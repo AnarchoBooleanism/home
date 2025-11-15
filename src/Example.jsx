@@ -1,5 +1,5 @@
 import React from 'react';
-import './style/Example.css';
+import './style/Example.scss';
 
 const Example = (props) => {
     const example = props.examples;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './style/Keyword.css';
+import './style/Keyword.scss';
 
 const Keyword = (props) => {
     if (props.ariaHidden) {

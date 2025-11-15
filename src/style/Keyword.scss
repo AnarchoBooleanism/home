@@ -1,0 +1,20 @@
+@use 'constants';
+
+.keyword {
+  padding: 1em;
+  background-color: constants.$transparency-color-light-low;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+  border-radius: 100vh;
+  white-space: nowrap;
+  transition: background-color constants.$transition-length-fast, color constants.$transition-length-fast;
+  user-select: none;
+}
+
+.keyword:hover {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}

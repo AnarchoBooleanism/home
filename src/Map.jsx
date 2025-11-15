@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
-import './style/Map.css';
+import './style/Map.scss';
 
 const Map = () => {
     const renderMarkers = (map, maps) => {

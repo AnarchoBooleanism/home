@@ -1,3 +1,5 @@
+@use 'constants';
+
 .contact-container-background {
   background-position: center;
   background-repeat: no-repeat;
@@ -5,13 +7,13 @@
 }
 
 .contact-container {
-  background-color: rgba(0,0,0,0.5);
-  backdrop-filter: blur(4px);
+  background-color: constants.$transparency-color-dark-medium;
+  backdrop-filter: blur(constants.$blur-radius-small);
 }
 
 .contact_container__content .flex-container {
-  min-height: calc(100vh - 6em);
-  padding: 1em 0em;
+  min-height: calc(100vh - (constants.$footer-height + (2 * constants.$contact-container-padding)));
+  padding: constants.$contact-container-padding 0;
   width: 100%;
 }
 
@@ -21,14 +23,13 @@
 
 .email-copier-container {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   cursor: pointer;
-  font-size: 1em;
-  border-radius: 64px;
-  background-color: rgba(255,255,255,0.2);
+  margin: constants.$margin-smaller 0;
+  border-radius: 100vh;
+  background-color: constants.$transparency-color-light-low;
   color: white;
-  transition: background-color 0.25s;
-  min-width: 10em;
+  transition: background-color constants.$transition-length-fast;
 }
 
 .email-copier-container:hover {
@@ -52,19 +53,19 @@
 }
 
 .email-copier-container:active {
-  background-color: rgba(255,255,255,0.8);
+  background-color: constants.$transparency-color-light-high;
 }
 
 .email-copier-container__text {
-  line-height: 6.5em;
+  line-height: 4em;
+  font-size: 1em;
   color: white;
   box-shadow: none;
-  border-width: 0px;
-  padding: 0em 1em;
+  border-width: 0;
+  padding: 0 constants.$padding-normal;
   width: 100%;
   background-color: transparent;
-  /* border-radius: 64px; */
-  transition: background-color 0.25s, color 0.25s;
+  transition: background-color constants.$transition-length-fast, color constants.$transition-length-fast;
 }
 
 .email-copier-container__text:hover {
@@ -80,9 +81,9 @@
 }
 
 .email-copier-container__icon {
-  padding: 10px;
+  padding: 1em; // Icon-specific
   color: white;
-  border-radius: 256px;
+  border-radius: 100vh;
   background-color: transparent;
   border: none;
   outline: none;
@@ -90,73 +91,50 @@
 }
 
 .email-copier-container__icon i {
-  transition: color 0.25s;
+  transition: color constants.$transition-length-fast;
 }
 
 .contact-info-container {
-  flex-grow: 2;
+  flex-grow: 1;
 }
 
 .contact-info-container__links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  // Since the email thing is technically separate to the rest of the links, need to compensate for missing gap
+  gap: 2 * constants.$contact-container-links-gap;
+}
+
+.contact-info-container__links .link-button {
+  min-width: 6em; // Situation-specific, biggest size that doesn't break for above narrow screen width
 }
 
 .button-wrapper--contact-info {
+  gap: constants.$contact-container-links-gap;
   flex-wrap: wrap;
+  justify-content: space-between;  
 }
 
-.contact-info-container__links__priority-links {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 1.5em;
-  gap: 1em;
-}
-
-.link-button--resume {
-  min-width: 10em;
-  padding: 1.25em 0em;
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: constants.$screen-width-narrowest) {
   .contact-info-container {
     min-width: 100%;
-  }
-  
-  .link-button--resume {
-    min-width: 100%;
-  }
- 
-  .email-copier-container__text {
-    width: 100%;
-    font-size: 1em;
-    line-height: 4em;
-  }
-  
-  .contact-info-container__links {
-    grid-gap: 2em;
   }
   
   .button-wrapper--contact-info {
     flex-direction: column;
   }
-
-  .contact-info-container__links__priority-links {
-    flex-direction: column;
-    grid-gap: 0em;
-    gap: 0em;
-  }
-
-  .email-copier-container {
-    min-width: 100%;
-  }
 }
 
-@media screen and (max-width: 980px) { 
+@media screen and (max-width: constants.$screen-width-narrow) { 
   .contact_container__content .flex-container {
     flex-direction: column-reverse;
     min-height: 0;
+  }
+
+  .button-wrapper--contact-info {
+    gap: 0.5em;
+    flex-wrap: wrap;
+    justify-content: space-between;  
   }
 }
