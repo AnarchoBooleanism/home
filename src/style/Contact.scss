@@ -1,19 +1,29 @@
 @use 'constants';
+@use 'Footer'; // We need footer-height here
+
+// Stylesheet-specific constants
+$background-image: url("/assets/code_pic1.jpg");
+$contact-container-padding: constants.$padding-normal;
+$contact-container-links-gap: constants.$gap-length-normal;
+$background-color: constants.$transparency-color-dark-medium;
+$blur-radius: constants.$blur-radius-small;
+$link-button-min-width: 6em;
 
 .contact-container-background {
+  background-image: $background-image;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .contact-container {
-  background-color: constants.$transparency-color-dark-medium;
-  backdrop-filter: blur(constants.$blur-radius-small);
+  background-color: $background-color;
+  backdrop-filter: blur($blur-radius);
 }
 
 .contact_container__content .flex-container {
-  min-height: calc(100vh - (constants.$footer-height + (2 * constants.$contact-container-padding)));
-  padding: constants.$contact-container-padding 0;
+  min-height: calc(100vh - (Footer.$footer-height + (2 * $contact-container-padding)));
+  padding: $contact-container-padding 0;
   width: 100%;
 }
 
@@ -27,39 +37,39 @@
   cursor: pointer;
   margin: constants.$margin-smaller 0;
   border-radius: 100vh;
-  background-color: constants.$transparency-color-light-low;
-  color: white;
+  background-color: constants.$default-background-color-transparent;
+  color: constants.$default-text-color;
   transition: background-color constants.$transition-length-fast;
 }
 
 .email-copier-container:hover {
-  background-color: white;
+  background-color: constants.$hover-background-color;
 }
 
 .email-copier-container:hover .email-copier-container__text {
-  color: black;
+  color: constants.$hover-text-color;
 }
 
 .email-copier-container:hover .email-copier-container__icon i {
-  color: black;
+  color: constants.$hover-text-color;
 }
 
 .email-copier-container:active .email-copier-container__text {
-  color: black;
+  color: constants.$active-text-color;
 }
 
 .email-copier-container:active .email-copier-container__icon i {
-  color: black;
+  color: constants.$active-text-color;
 }
 
 .email-copier-container:active {
-  background-color: constants.$transparency-color-light-high;
+  background-color: constants.$active-background-color;
 }
 
 .email-copier-container__text {
   line-height: 4em;
   font-size: 1em;
-  color: white;
+  color: constants.$default-text-color;
   box-shadow: none;
   border-width: 0;
   padding: 0 constants.$padding-normal;
@@ -71,18 +81,18 @@
 .email-copier-container__text:hover {
   outline:none!important;
   background-color: transparent;
-  color: black;
+  color: constants.$hover-text-color;
 }
 
 .email-copier-container__text:focus {
   outline:none!important;
   background-color: transparent;
-  color: black;
+  color: constants.$hover-text-color;
 }
 
 .email-copier-container__icon {
   padding: 1em; // Icon-specific
-  color: white;
+  color: constants.$default-text-color;
   border-radius: 100vh;
   background-color: transparent;
   border: none;
@@ -103,15 +113,15 @@
   flex-direction: column;
   justify-content: space-between;
   // Since the email thing is technically separate to the rest of the links, need to compensate for missing gap
-  gap: 2 * constants.$contact-container-links-gap;
+  gap: 2 * $contact-container-links-gap;
 }
 
 .contact-info-container__links .link-button {
-  min-width: 6em; // Situation-specific, biggest size that doesn't break for above narrow screen width
+  min-width: $link-button-min-width; // Situation-specific, biggest size that doesn't break for above narrow screen width
 }
 
 .button-wrapper--contact-info {
-  gap: constants.$contact-container-links-gap;
+  gap: $contact-container-links-gap;
   flex-wrap: wrap;
   justify-content: space-between;  
 }
@@ -133,7 +143,7 @@
   }
 
   .button-wrapper--contact-info {
-    gap: 0.5em;
+    gap: 2 * $contact-container-links-gap; // Looks nicer this way
     flex-wrap: wrap;
     justify-content: space-between;  
   }

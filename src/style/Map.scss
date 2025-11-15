@@ -1,10 +1,13 @@
 @use 'constants';
 
+$map-width-large-size: 575px;
+$map-height-large-size: 575px;
+
 .map {
-  width: 575px;
+  width: $map-width-large-size;
   height: 70vh;
-  max-height: 575px;
-  max-width: calc(100vw - 575px)
+  max-height: $map-height-large-size;
+  max-width: calc(100vw - $map-width-large-size)
 }
 
 @media screen and (max-width: constants.$screen-width-narrow) {

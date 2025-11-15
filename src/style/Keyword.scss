@@ -1,9 +1,11 @@
 @use 'constants';
 
+$keyword-padding-size: constants.$padding-normal;
+
 .keyword {
-  padding: 1em;
-  background-color: constants.$transparency-color-light-low;
-  color: white;
+  padding: $keyword-padding-size;
+  background-color: constants.$default-background-color-transparent;
+  color: constants.$default-text-color;
   text-decoration: none;
   text-align: center;
   display: inline;
@@ -15,6 +17,6 @@
 
 .keyword:hover {
   text-decoration: none;
-  background-color: white;
-  color: black;
+  background-color: constants.$hover-background-color;
+  color: constants.$hover-text-color;
 }

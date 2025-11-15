@@ -1,10 +1,15 @@
 @use 'constants';
 
+// Stylesheet-specific constants
+$navbar-height: 5em;
+$link-hover-background-color: constants.$transparency-color-dark-low;
+$link-active-background-color: constants.$transparency-color-dark-medium;
+
 .navbar-container__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: constants.$navbar-height;
+  height: $navbar-height;
   font-weight: constants.$font-weight-normal;
 }
   
@@ -14,7 +19,7 @@
 }
   
 .navbar-container__content a {
-  color: white;
+  color: constants.$default-text-color;
   text-decoration: none;
 }
   
@@ -39,19 +44,19 @@
 }
   
 .navbar-container__content__links li a:hover {
-  background-color: constants.$transparency-color-dark-low;
+  background-color: $link-hover-background-color;
 }
   
 .navbar-container__content__links li a:active {
-  background-color: constants.$transparency-color-dark-medium;
+  background-color: $link-active-background-color;
 }
 
 #skip-nav-link {
   position: absolute;
   transform: translateY(-500%);
   transition: transform constants.$transition-length-fast;
-  background-color: white;
-  color: black;
+  background-color: constants.$hover-background-color;
+  color: constants.$hover-text-color;
 }
 
 #skip-nav-link:focus {

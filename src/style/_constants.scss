@@ -1,9 +1,8 @@
+// Global constants to use for other constants
+
 // Generally, you want to add magic numbers here if they're used multiple times or should be consistent with something else,
 // used as a component of the math for calculating some other number, or have a high potential to be either
 
-// TODO: Make the scss files more local-focused, move local-focused variables there
-
-// Global constants to use for other constants
 // Screen width constants
 $screen-width-narrowest: 700px;
 $screen-width-narrow: 980px;
@@ -16,6 +15,7 @@ $font-weight-bold: 900;
 // Padding sizes
 $padding-small: 0.5em;
 $padding-normal: 1em;
+$padding-medium-large: 1.5em;
 $padding-large: 2em;
 
 // Margin sizes
@@ -54,32 +54,17 @@ $border-radius-normal: 1em;
 $drop-shadow-radius-normal: 0.25em;
 $drop-shadow-radius-large: 0.5em;
 
-// App-wide constants
 // View area
 $view-area-padding: $padding-normal;
 
-// Flex container
-$flex-container-gap-length: 2em;
-
-// Link button
-$link-button-min-width: 8em;
-
-// Element/section-specific constants
-// Navigation bar
-$navbar-height: 5em;
-
-// About container
-$about-container-padding: $padding-normal;
-
-// Works container
-$works-container-padding: $padding-normal;
-
-// Contact container
-$contact-container-padding: $padding-normal;
-$contact-container-priority-link-min-width: 10em;
-$contact-container-links-gap: $gap-length-normal;
-
-// Footer
-$footer-height: 4em;
-$footer-height-line-break: 2em;
-$footer-padding: $padding-normal;
+// Color mappings for different kinds of elements
+$full-page-starting-background-color: #111111;
+$full-page-final-background-color: #222222;
+$link-color: #CCCCCC;
+$default-text-color: white;
+$default-background-color: black;
+$default-background-color-transparent: $transparency-color-light-low;
+$hover-text-color: black;
+$hover-background-color: white;
+$active-text-color: black;
+$active-background-color: $transparency-color-light-high;

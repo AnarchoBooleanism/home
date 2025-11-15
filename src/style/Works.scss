@@ -1,20 +1,28 @@
 @use 'constants';
 
+// Stylesheet-specific constants
+$works-container-background-color: constants.$transparency-color-dark-low;
+$works-container-padding: constants.$padding-normal;
+$special-works-outline-size: 2px;
+$special-works-padding: constants.$padding-small constants.$padding-normal;
+$special-works-background-color: constants.$transparency-color-light-low;
+$special-works-outline-color: constants.$transparency-color-light-medium;
+
 .works-container__content {
   padding: 0;
   display: flex;
 }
 
 .works-container {
-  min-height: calc(100vh - (2 * constants.$works-container-padding));
-  padding: constants.$works-container-padding constants.$works-container-padding;
+  min-height: calc(100vh - (2 * $works-container-padding));
+  padding: $works-container-padding $works-container-padding;
   align-items: center;
-  background-color: constants.$transparency-color-dark-low;
+  background-color: $works-container-background-color;
 }
 
 .special-works-container {
-  background-color: constants.$transparency-color-light-low;
-  padding: 0.5em 1em;
+  background-color: $special-works-background-color;
+  padding: $special-works-padding;
   border-radius: constants.$border-radius-normal;
-  outline: 2px solid constants.$transparency-color-light-medium;
+  outline: $special-works-outline-size solid $special-works-outline-color;
 }

@@ -2,7 +2,7 @@
 
 This is a React app that constitutes my personal portfolio, with my profile, example works, and any relevant links.
 
-This was initially bootstrapped with [Create React App](https://github.com/facebook/create-react-app), but was moved to and now runs on [Vite](https://vite.dev) and [React](https://react.dev), thanks to [Adhithi Ravichandran's guide for migrating to Vite](https://adhithiravi.medium.com/migrating-from-create-react-app-to-vite-a-modern-approach-76148adb8983).
+This was initially bootstrapped with [Create React App](https://github.com/facebook/create-react-app), but was moved to and now runs on [Vite](https://vite.dev) and [React](https://react.dev) (and [Sass](https://sass-lang.com/)), thanks to [Adhithi Ravichandran's guide for migrating to Vite](https://adhithiravi.medium.com/migrating-from-create-react-app-to-vite-a-modern-approach-76148adb8983).
 
 ## Available Scripts
 

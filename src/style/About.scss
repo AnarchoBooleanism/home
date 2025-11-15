@@ -1,8 +1,14 @@
 @use 'constants';
+@use 'Navbar'; // We need navbar-height here
+
+// Stylesheet-specific constants
+$about-container-padding: constants.$padding-normal;
+$image-rotation: -1deg;
+$image-max-height: 600px;
 
 .flex-container--about {
-  min-height: calc(100vh - (constants.$navbar-height + (2 * constants.$about-container-padding)));
-  padding: constants.$about-container-padding 0;
+  min-height: calc(100vh - (Navbar.$navbar-height + (2 * $about-container-padding)));
+  padding: $about-container-padding 0;
 }
 
 .flex-container--about img {
@@ -10,7 +16,7 @@
 }
 
 .image-box-container--about {
-  transform: rotate(-1deg);
+  transform: rotate($image-rotation);
 }
 
 @media screen and (max-width: constants.$screen-width-narrow) {
@@ -20,6 +26,6 @@
   }
 
   .image-box-container--about img {
-    max-height: 600px;
+    max-height: $image-max-height;
   }
 }

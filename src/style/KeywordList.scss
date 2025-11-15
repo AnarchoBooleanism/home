@@ -1,25 +1,30 @@
 @use 'constants';
 
+$fadeout-length: 2em;
+$keywords-container-padding-size: constants.$padding-large;
+$keyword-track-gap-length: constants.$gap-length-large; 
+$keyword-track-animation-length: 60s;
+
 .fadeout-horizontal {
     mask-image: linear-gradient(
         to right,
         transparent,
-        black 2em,
-        black calc(100% - 2em),
+        black $fadeout-length,
+        black calc(100% - $fadeout-length),
         transparent
     );
 }
 
 .keywords-container {
     overflow: clip;
-    padding: 0em 0em constants.$padding-large 0em;
+    padding: 0 0 $keywords-container-padding-size 0;
 }
 
 .keyword-track {
     display: flex;
-    gap: constants.$gap-length-large;
+    gap: $keyword-track-gap-length;
     width: max-content;
-    animation: keywords-move-text 60s linear infinite;
+    animation: keywords-move-text $keyword-track-animation-length linear infinite;
 }
 
 .keyword-track:hover {

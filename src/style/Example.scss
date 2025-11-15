@@ -1,5 +1,7 @@
 @use 'constants';
 
+$example-image-min-width: 50%;
+
 .example-container {
   margin: 1em 0;
 }
@@ -15,7 +17,7 @@
 .example-container img {
   filter: brightness(1) blur(0);
   transition: constants.$transition-length-normal all ease-in-out;
-  min-width: 50%;
+  min-width: $example-image-min-width;
   height: auto;
 }
 

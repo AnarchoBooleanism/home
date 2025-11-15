@@ -1,13 +1,18 @@
 @use 'constants';
 
+// Stylesheet-specific constants
+$footer-height: 4em;
+$footer-height-line-break: 2em;
+$footer-padding: constants.$padding-normal;
+
 .footer-container {
-  background-image: linear-gradient(#111111, #222222);
+  background-image: linear-gradient(constants.$full-page-starting-background-color, constants.$full-page-final-background-color);
 }
 
 .footer-container__content {
   text-align: center;
-  height: constants.$footer-height;
-  line-height: constants.$footer-height;
+  height: $footer-height;
+  line-height: $footer-height;
 }
 
 .footer-container__content h2 {
@@ -25,9 +30,9 @@
 
 @media screen and (max-width: constants.$screen-width-narrow) {
   .footer-container__content {
-    padding-top: constants.$footer-padding;
-    padding-bottom: constants.$footer-padding;
+    padding-top: $footer-padding;
+    padding-bottom: $footer-padding;
     height: auto;
-    line-height: constants.$footer-height-line-break;
+    line-height: $footer-height-line-break;
   }
 }
