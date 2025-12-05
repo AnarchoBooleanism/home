@@ -3,7 +3,7 @@
 $example-image-min-width: 50%;
 
 .example-container {
-  margin: 1em 0;
+  margin: constants.$margin-medium-large 0;
 }
 
 .example-container-container h1 {

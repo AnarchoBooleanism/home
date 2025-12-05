@@ -7,7 +7,7 @@ $contact-container-padding: constants.$padding-normal;
 $contact-container-links-gap: constants.$gap-length-normal;
 $background-color: constants.$transparency-color-dark-medium;
 $blur-radius: constants.$blur-radius-small;
-$link-button-min-width: 6em;
+$link-button-min-width: 6.5em;
 
 .contact-container-background {
   background-image: $background-image;
@@ -19,6 +19,7 @@ $link-button-min-width: 6em;
 .contact-container {
   background-color: $background-color;
   backdrop-filter: blur($blur-radius);
+  filter: drop-shadow(0 0 constants.$drop-shadow-radius-large black);
 }
 
 .contact_container__content .flex-container {
@@ -137,6 +138,11 @@ $link-button-min-width: 6em;
 }
 
 @media screen and (max-width: constants.$screen-width-narrow) { 
+  .contact-info-container {
+    flex-grow: 1;
+    min-width: 100%;
+  }
+
   .contact_container__content .flex-container {
     flex-direction: column-reverse;
     min-height: 0;

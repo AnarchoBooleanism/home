@@ -15,7 +15,7 @@ $special-works-outline-color: constants.$transparency-color-light-medium;
 
 .works-container {
   min-height: calc(100vh - (2 * $works-container-padding));
-  padding: $works-container-padding $works-container-padding;
+  padding: $works-container-padding 0;
   align-items: center;
   background-color: $works-container-background-color;
 }

@@ -6,7 +6,7 @@ $footer-height-line-break: 2em;
 $footer-padding: constants.$padding-normal;
 
 .footer-container {
-  background-image: linear-gradient(constants.$full-page-starting-background-color, constants.$full-page-final-background-color);
+  background-color: constants.$full-page-final-background-color;
 }
 
 .footer-container__content {

@@ -22,6 +22,7 @@ $padding-large: 2em;
 $margin-smaller: 0.25em;
 $margin-small: 0.5em;
 $margin-normal: 1em;
+$margin-medium-large: 1.5em;
 
 // Gap sizes
 $gap-length-normal: 0.25em;
@@ -55,11 +56,10 @@ $drop-shadow-radius-normal: 0.25em;
 $drop-shadow-radius-large: 0.5em;
 
 // View area
-$view-area-padding: $padding-normal;
+$view-area-padding: $padding-medium-large;
 
 // Color mappings for different kinds of elements
-$full-page-starting-background-color: #111111;
-$full-page-final-background-color: #222222;
+$full-page-final-background-color: #111111;
 $link-color: #CCCCCC;
 $default-text-color: white;
 $default-background-color: black;
