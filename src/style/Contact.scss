@@ -19,7 +19,7 @@ $link-button-min-width: 6.5em;
 .contact-container {
   background-color: $background-color;
   backdrop-filter: blur($blur-radius);
-  filter: drop-shadow(0 0 constants.$drop-shadow-radius-large black);
+  box-shadow: 0 0 constants.$drop-shadow-radius-large black;
 }
 
 .contact_container__content .flex-container {
