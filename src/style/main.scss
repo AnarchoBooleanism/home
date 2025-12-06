@@ -7,6 +7,7 @@ $flex-container-gap-length: 2em;
 $flex-container-image-hover-scale: 1.3;
 $flex-container-image-max-width: 575px;
 $flex-container-image-max-height: 80vh;
+$link-underline-width: 1px;
 $link-button-min-width: 8em;
 $link-button-padding: constants.$padding-medium-large constants.$padding-normal;
 $section-header-font-size: 3.5em;
@@ -41,12 +42,34 @@ h1 {
 }
 
 a {
-  color: constants.$link-color;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.link { /* Thanks to https://stackoverflow.com/a/54616200 */
+  color: constants.$link-color;
+  background-image: linear-gradient(constants.$link-color 0 0);
+  background-position: 0 100%;
+  background-size: 0% $link-underline-width;
+  background-repeat: no-repeat;
+  transition:
+    color constants.$transition-length-fast,
+    background-image constants.$transition-length-fast,
+    background-size constants.$transition-length-fast,
+    background-position 0s constants.$transition-length-fast; /*change after the size immediately*/
+}
+
+.link:hover {
+  color: constants.$link-color-hover;
+  background-image: linear-gradient(constants.$link-color-hover 0 0);
+  background-position: 100% 100%;
+  background-size: 100% $link-underline-width;
+}
+
+.link:active {
+  color: constants.$link-color-active;
+  background-image: linear-gradient(constants.$link-color-active 0 0);
+  background-position: 100% 100%;
+  background-size: 100% $link-underline-width;
 }
 
 .flex-container {
