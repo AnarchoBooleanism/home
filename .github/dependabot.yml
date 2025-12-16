@@ -20,7 +20,7 @@ updates:
           - "eslint"
           - "eslint-plugin-react"
       vite:
-        paterrns:
+        patterns:
           - "vite"
           - "vite-plugin-eslint"
   - package-ecosystem: "github-actions" # See documentation for possible values
