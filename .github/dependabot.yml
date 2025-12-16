@@ -23,6 +23,7 @@ updates:
         patterns:
           - "vite"
           - "vite-plugin-eslint"
+          - "@vitejs/plugin-react"
   - package-ecosystem: "github-actions" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
