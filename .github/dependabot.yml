@@ -9,6 +9,20 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    groups:
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@testing-library/react"
+      eslint:
+        patterns:
+          - "eslint"
+          - "eslint-plugin-react"
+      vite:
+        paterrns:
+          - "vite"
+          - "vite-plugin-eslint"
   - package-ecosystem: "github-actions" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
