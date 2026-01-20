@@ -31,7 +31,7 @@ const Example = (props) => {
                 <a href={ example.links[0].url } target="_blank" rel="noopener noreferrer">
                     <div>
                         <div className="image-box">
-                            <img src={ example.image } alt="Project example"></img>
+                            <img src={ example.image } alt={ example.altText }></img>
                         </div>
                     </div>
                 </a>
