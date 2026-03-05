@@ -18,13 +18,13 @@ const Contact = () => {
                 <div className="contact-info-container__links">
                   <div className="email-copier-container">
                       <input className="email-copier-container__text" type="text" value="anarchbool@anarchbool.dev" readonly autocomplete="off" data-1p-ignore data-lpignore="true" data-protonpass-ignore="true"></input>
-                      <button className="email-copier-container__icon" onClick={() =>  navigator.clipboard.writeText('anarchbool@anarchbool.dev')} ><i className="far fa-copy"></i></button>
+                      <button className="email-copier-container__icon" onClick={() =>  navigator.clipboard.writeText('anarchbool@anarchbool.dev')} ><i className="far fa-copy" aria-label="Copy" /></button>
                     </div>  
                   <div className="button-wrapper button-wrapper--contact-info">
-                    <a className="link-button" href="/resumes/sedo_20260220a.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                    <a className="link-button" href="https://github.com/AnarchoBooleanism" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> GitHub</a>
-                    <a className="link-button" href="https://www.linkedin.com/in/nathan-guerrero-89a41919b/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i> LinkedIn</a>
-                    <a className="link-button" href="https://uci.joinhandshake.com/users/33173069" target="_blank" rel="noopener noreferrer">Handshake</a>
+                    <a className="link-button" href="/resumes/sedo_20260220a.pdf" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-file-lines" /> Resume</a>
+                    <a className="link-button" href="https://github.com/AnarchoBooleanism" target="_blank" rel="noopener noreferrer"><i className="fab fa-github" /> GitHub</a>
+                    <a className="link-button" href="https://www.linkedin.com/in/nathan-guerrero-89a41919b/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in" /> LinkedIn</a>
+                    <a className="link-button" href="https://uci.joinhandshake.com/users/33173069" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-h" /> Handshake</a>
                   </div>
                 </div>
               </div>
