@@ -28,7 +28,7 @@ jobs:
           CI: false
           VITE_GOOGLE_KEY: ${{ secrets.VITE_GOOGLE_KEY }}
       - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           name: build-artifact
           path: build/
