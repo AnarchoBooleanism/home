@@ -45,7 +45,7 @@
     "sass": "^1.99.0",
     "vite": "^8.0.11",
     "vite-plugin-eslint": "^1.8.1",
-    "vitest": "^4.1.5"
+    "vitest": "^4.1.6"
   },
   "homepage": "https://anarchbool.dev/home"
 }
