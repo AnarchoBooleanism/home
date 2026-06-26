@@ -8,6 +8,10 @@ on:
       - '.github/**' # Only consider paths directly relevant to the build
       - 'README.md'
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 # NOTE: Make sure, in your environment secrets page, that "VITE_GOOGLE_KEY" is set!
 
 jobs:
