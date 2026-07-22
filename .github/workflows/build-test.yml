@@ -18,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
       - name: Set up Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
       - name: Clean install Node.js dependencies
         run: npm ci
       - name: Build package with Node.js
