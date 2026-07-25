@@ -2,9 +2,11 @@
 export const specialExamplesList = [
     {
         "title": "Sapphic Homelab/Home Server (2024-present)",
-        "subtitle": "Personal project",
-        "description": "I'm an avid homelab enthusiast. What started as a simple Home Assistant instance on an old laptop quickly grew into a new hobby and a passion for hosting various services and experimenting with different technologies. Nowadays, with the many additions of used hardware, this homelab/home server is closer to a \"mini-datacenter\", performing a variety of tasks, from hosting experiments, to file storage and remote development.",
-        "extraText": "Through this journey, and many dozens of hours of debugging and problem solving, I've gained hands-on experience in optimizing network configurations with OpenWrt and special hardware, leveraging Proxmox and Linux for virtual machines, containers, and clustered environments, creating CI/CD and IaC pipelines for ease of deployment, and expediting iteration with automation scripts. This has given me extensive experience in deployment and web administration, all while creating a highly functional and evolving home IT infrastructure from diverse hardware.",
+        "subtitle": "Active maintainer",
+        "description": "A personal homelab and clustered home server, made with low-cost components, and actively maintained and developed with DevOps principles, including CI/CD pipelines, GitOps, and Infrastructure as Code. It runs Proxmox, TrueNAS, NixOS, and Docker Compose, supported with a mix of Ansible, Komodo, and GitHub Actions, among other tools, to run at least X services, including. It also runs",
+        "extraText": "",
+        // "description": "I'm an avid homelab enthusiast. What started as a simple Home Assistant instance on an old laptop quickly grew into a new hobby and a passion for hosting various services and experimenting with different technologies. Nowadays, with the many additions of used hardware, this homelab/home server is closer to a \"mini-datacenter\", performing a variety of tasks, from hosting experiments, to file storage and remote development.",
+        // "extraText": "Through this journey, and many dozens of hours of debugging and problem solving, I've gained hands-on experience in optimizing network configurations with OpenWrt and special hardware, leveraging Proxmox and Linux for virtual machines, containers, and clustered environments, creating CI/CD and IaC pipelines for ease of deployment, and expediting iteration with automation scripts. This has given me extensive experience in deployment and web administration, all while creating a highly functional and evolving home IT infrastructure from diverse hardware.",
         "image": import.meta.env.BASE_URL + "assets/specialexample_pic1.jpg",
         "altText": "A picture of my homelab, focused on short patch cables of various colors connecting a patch panel and different switches",
         "links": [
