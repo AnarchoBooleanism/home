@@ -7,7 +7,7 @@ const keywordList = [
     "Virtual Machines", "QEMU", "Networking", "Web Deployment", "Databases", "SQL",
     "FastAPI", "Search Engines", "Indexing", "Systems Development", "Systems Administration", "Cybersecurity",
     "x86 Assembly", "Compilers", "APIs", "Multiprocessing", "Distributed Systems", "Software Design",
-    "Object-Oriented Programming", "Functional Programming", "Full Stack Development", "Big Data",
+    "Object-Oriented Programming", "Functional Programming", "Full Stack Development",
     "AI", "LLM-Assisted Development" // Might as well
 ];
 
