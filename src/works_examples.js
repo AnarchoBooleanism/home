@@ -5,7 +5,7 @@ export const specialExamplesList = [
         "subtitle": "Active maintainer",
         "description": "A personal homelab and clustered home server, made with low-cost components and developed with DevOps principles at its foundation. It uses Proxmox, TrueNAS, NixOS, and Docker Compose (all with Linux), supported with GitHub Actions, Ansible, Komodo, and Traefik (among other tools), to run at least 21 services, including Pterodactyl, Immich, and n8n.",
         "extraText": "Challenges: With many services to support, and limited hardware capacity and free time, a focus on efficiency and automation is key for sustainability. Wherever possible, applications rely on containerization (with lean, custom Docker images) for a low footprint, and the size of NixOS-based VMs are kept to a minimum by using outside builders for deployment. CI/CD pipelines, shell scripts, and numerous orchestration layers help automate many core tasks; combined with GitOps and Infrastructure as Code, there is reduced risk in case of regressions.",
-        "image": import.meta.env.BASE_URL + "assets/specialexample_pic1.jpg",
+        "image": import.meta.env.BASE_URL + "assets/specialexample_pic1.webp",
         "altText": "A picture of my homelab, focused on short patch cables of various colors connecting a patch panel and different switches",
         "links": [
             {"title": "Demonstration", "url": "https://www.youtube.com/watch?v=hI5Pl6_dHzY"}
