@@ -1,5 +1,5 @@
 {
-  // NOTE: This should be able to catch github-releases and dockerfile!
+  // NOTE: This should be able to catch github-releases and npm!
 
   // Overall Renovate config
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
