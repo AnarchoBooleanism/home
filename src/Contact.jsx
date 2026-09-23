@@ -24,7 +24,7 @@ const Contact = () => {
                     <a className="link-button" href="/resumes/sedo_20260220a.pdf" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-file-lines" /> Resume</a>
                     <a className="link-button" href="https://github.com/AnarchoBooleanism" target="_blank" rel="noopener noreferrer"><i className="fab fa-github" /> GitHub</a>
                     <a className="link-button" href="https://www.linkedin.com/in/nathan-guerrero-89a41919b/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in" /> LinkedIn</a>
-                    <a className="link-button" href="https://uci.joinhandshake.com/users/33173069" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-h" /> Handshake</a>
+                    <a className="link-button" href="https://uci.joinhandshake.com/profiles/anarchbool" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-h" /> Handshake</a>
                   </div>
                 </div>
               </div>
