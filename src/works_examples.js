@@ -8,7 +8,7 @@ export const specialExamplesList = [
         "image": import.meta.env.BASE_URL + "assets/specialexample_pic1.webp",
         "altText": "A picture of my homelab, focused on short patch cables of various colors connecting a patch panel and different switches",
         "links": [
-            {"title": "Demonstration", "url": "https://www.youtube.com/watch?v=hI5Pl6_dHzY"}
+            {"title": "Demonstration", "url": "https://www.youtube.com/watch?v=q_1CwsmaGQE"}
         ],
         "id": 0
     }
