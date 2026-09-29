@@ -3,10 +3,10 @@ export const specialExamplesList = [
     {
         "title": "Sapphic Homelab/Home Server (2024-present)",
         "subtitle": "Active maintainer",
-        "description": "A personal homelab and clustered home server, made with low-cost components and developed with DevOps principles at its foundation. It uses Proxmox, TrueNAS, NixOS, and Docker Compose (all with Linux), supported with GitHub Actions, Ansible, Komodo, and Traefik (among other tools), to run at least 21 services, including Pterodactyl, Immich, and n8n.",
-        "extraText": "Challenges: With many services to support, and limited hardware capacity and free time, a focus on efficiency and automation is key for sustainability. Wherever possible, applications rely on containerization (with lean, custom Docker images) for a low footprint, and the size of NixOS-based VMs are kept to a minimum by using outside builders for deployment. CI/CD pipelines, shell scripts, and numerous orchestration layers help automate many core tasks; combined with GitOps and Infrastructure as Code, there is reduced risk in case of regressions.",
+        "description": "A multi-node server setup, made with repurposed parts and developed with DevOps principles at its foundation. Being based on Proxmox, NixOS, Komodo, and Docker Compose, and supported with GitHub Actions, Ansible, and Renovate (among other tools), provisioning, configuration, and orchestration are seamless, and as a result, this homelab manages to run at least 37 services, including Pterodactyl and n8n.",
+        "extraText": "Challenges: With many services to support, yet limited hardware capacity and free time, a focus on efficiency, automation, and reproducibility (with GitOps + IaC) is key for sustainability. Wherever possible, applications get containerized (with lean Docker images) for a low footprint, and dedicated builders handle heavy build tasks at all levels. Renovate is set to manage updates, and with multiple layers of CI/CD pipelines and orchestrators, updates are simultaneously stable yet fast-moving, thanks to the level of testing and reproducibility afforded by this GitOps approach.",
         "image": import.meta.env.BASE_URL + "assets/specialexample_pic1.webp",
-        "altText": "A picture of my homelab, focused on short patch cables of various colors connecting a patch panel and different switches",
+        "altText": "A photo of my homelab, with multiple switches and computers laid out vertically in a rackmount shelf, connected with numerous colored patch cables, as well as various labels and stickers laid on top of the surfaces facing the camera",
         "links": [
             {"title": "Demonstration", "url": "https://www.youtube.com/watch?v=q_1CwsmaGQE"}
         ],
