@@ -11,6 +11,7 @@ const Navbar = () => {
               <li><a href="#about">About Me</a></li>
               <li><a href="#works">Works</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li><a href="/blog">Blog <i className="fa-solid fa-arrow-up-right-from-square" /></a></li>
           </ul>
         </div>
       </div>
