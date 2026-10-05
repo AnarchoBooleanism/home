@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04-arm
     environment:
       name: build # Be sure to set your environment here that has "VITE_GOOGLE_KEY"
     steps:
@@ -38,7 +38,7 @@ jobs:
           path: build/
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04-arm
     permissions:
       pages: write
       id-token: write
